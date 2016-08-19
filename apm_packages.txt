@@ -14,6 +14,7 @@ git-history
 git-log
 git-plus
 git-time-machine
+highlight-line
 highlight-selected
 japanese-menu
 jumpy
@@ -33,5 +34,6 @@ project-manager
 railscast-theme
 slim-language
 sort-lines
+symbols-tree-view
 tabs-to-spaces
 tree-view-git-status
