@@ -28,3 +28,9 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+.emacs.d/ac-comphist.dat
+.emacs.d/el-get/
+.emacs.d/elpa/
+.emacs.d/history
+.emacs.d/places
+.emacs.d/recentf
