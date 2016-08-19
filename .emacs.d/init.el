@@ -110,8 +110,8 @@
 ;; 2011-10-27
 ;; 空白や長すぎる行を視覚化する。
 (require 'whitespace)
-;; 1行が80桁を超えたら長すぎると判断する。
-(setq whitespace-line-column 80)
+;; 1行が240桁を超えたら長すぎると判断する。
+(setq whitespace-line-column 240)
 (setq whitespace-style '(face              ; faceを使って視覚化する。
                          trailing          ; 行末の空白を対象とする。
                          lines-tail        ; 長すぎる行のうち
