@@ -6,7 +6,7 @@
 
 ;;; 選択行をグレーで表示
 (custom-set-faces
-'(hl-line ((t (:background "gray20"))))
+'(hl-line ((t (:background "gray50"))))
 '(header-line ((t (:background "#191970"))))
 )
 
