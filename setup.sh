@@ -1,7 +1,8 @@
 #!/bin/bash
 
-DOTFILES_DIR=`pwd`
+rm $HOME/.bashrc
 
+DOTFILES_DIR=`pwd`
 DOT_FILES=( .emacs.d .bashrc .tmux.conf .zshenv .zshrc )
 
 for file in ${DOT_FILES[@]}
