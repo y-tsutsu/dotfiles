@@ -57,8 +57,10 @@
 (add-hook 'auto-complete-mode-hook
           (lambda ()
             (define-key ac-completing-map (kbd "C-n") 'ac-next)
-            (define-key ac-completing-map (kbd "C-p") 'ac-previous)))
-(setq ac-use-fuzzy t)       ;; 曖昧マッチ
+            (define-key ac-completing-map (kbd "C-p") 'ac-previous)
+            (define-key ac-completing-map (kbd "TAB") 'ac-set-trigger-key)))
+(ac-set-trigger-key "TAB")      ;; トリガ
+(setq ac-use-fuzzy t)           ;; 曖昧マッチ
 
 
 ;;; Helm
