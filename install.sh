@@ -4,14 +4,14 @@ DOTFILES_DIR=`pwd`
 cd $HOME
 
 # build-essential
-sudo aptitude install build-essential -y
+#sudo aptitude install build-essential -y
 
 # open-vm-tools
-sudo aptitude install open-vm-tools open-vm-tools-desktop -y
+#sudo aptitude install open-vm-tools open-vm-tools-desktop -y
 
 # git subversion（git本体は事前にインストール）
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
-sudo aptitude install subversion subversion-tools
+sudo aptitude install subversion subversion-tools -y
 
 # terminator zsh tmux
 sudo aptitude install terminator zsh tmux xsel -y
@@ -30,7 +30,7 @@ pyenv global 3.5.2
 sudo aptitude install emacs vim -y
 
 # atom（本体は事前にdebファイルからインストール）
-apm install --packages-file $DOTFILES_DIR/packages.txt
+apm install --packages-file $DOTFILES_DIR/apm_packages.txt
 
 # rtags build
 sudo aptitude install clang libclang-dev cmake -y
