@@ -32,3 +32,8 @@
 (setq scroll-conservatively 35
   scroll-margin 0
   scroll-step 1)
+
+;;; *.~ とかのバックアップファイルを作らない
+(setq make-backup-files nil)
+;;; .#* とかのバックアップファイルを作らない
+(setq auto-save-default nil)
