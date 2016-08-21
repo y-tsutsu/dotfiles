@@ -9,8 +9,7 @@ sudo aptitude install build-essential -y
 # open-vm-tools
 sudo aptitude install open-vm-tools open-vm-tools-desktop -y
 
-# git subversion
-sudo aptitude install git
+# git subversion（git本体は事前にインストール）
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 sudo aptitude install subversion subversion-tools
 
