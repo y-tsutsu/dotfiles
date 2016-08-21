@@ -58,6 +58,7 @@
           (lambda ()
             (define-key ac-completing-map (kbd "C-n") 'ac-next)
             (define-key ac-completing-map (kbd "C-p") 'ac-previous)))
+(setq ac-use-fuzzy t)       ;; 曖昧マッチ
 
 
 ;;; Helm
