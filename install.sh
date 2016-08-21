@@ -10,6 +10,15 @@ cd $HOME
 #sudo aptitude install open-vm-tools open-vm-tools-desktop -y
 
 # git subversion（git本体は事前にインストール）
+git config --global user.name "tsutsu"
+git config --global user.email "tsutsu@example.com"
+git config --global core.editor 'emacs -nw'
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global push.default simple
+git config --global core.precomposeunicode true
+git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 sudo aptitude install subversion subversion-tools -y
 
