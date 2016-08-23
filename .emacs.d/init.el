@@ -261,4 +261,4 @@
 
 ;;; 警告外し
 ;; shut up, emacs!
-(setq display-warning-minimum-level :error))
+(setq display-warning-minimum-level :error)
