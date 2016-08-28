@@ -37,3 +37,7 @@
 (setq make-backup-files nil)
 ;;; .#* とかのバックアップファイルを作らない
 (setq auto-save-default nil)
+
+;;; 警告外し
+;; shut up, emacs!
+(setq display-warning-minimum-level :error)

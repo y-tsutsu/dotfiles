@@ -257,8 +257,3 @@
 ;; 個別の設定があったら読み込む
 ;; 2012-02-15
 (load "config/local" t)
-
-
-;;; 警告外し
-;; shut up, emacs!
-(setq display-warning-minimum-level :error)
