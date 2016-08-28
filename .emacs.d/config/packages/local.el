@@ -17,3 +17,10 @@
 (require 'undo-tree)
 (global-undo-tree-mode t)
 (global-set-key (kbd "M-/") 'undo-tree-redo)
+
+;;; nlinum
+(package-ensure-install 'nlinum)
+;; バッファの左側に行番号を表示する
+(global-nlinum-mode t)
+;; 5 桁分の表示領域を確保する
+(setq nlinum-format "%5d ")
