@@ -15,5 +15,7 @@ do
 done
 
 if [ ! -e $HOME/.oh-my-zsh ]; then
-  git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+    git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 fi
+
+ln -s $DOTFILES_DIR/terminator-cjk.desktop $HOME/.local/share/applications/terminator-cjk.desktop
