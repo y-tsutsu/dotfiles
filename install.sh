@@ -39,7 +39,7 @@ pyenv global 3.5.2
 sudo aptitude install emacs vim -y
 
 # atom（本体は事前にdebファイルからインストール）
-apm install --packages-file $DOTFILES_DIR/apm_packages.txt
+#apm install --packages-file $DOTFILES_DIR/apm_packages.txt
 
 # rtags build
 sudo aptitude install clang libclang-dev cmake -y
@@ -59,4 +59,4 @@ cmake ..
 make && sudo make install
 
 # etc.
-sudo aptitude install ruby nodejs npm tig git-cola libncurses5-dev -y
+sudo aptitude install ruby nodejs npm tig git-cola libncurses5-dev gdb -y

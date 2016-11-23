@@ -3,7 +3,7 @@
 rm $HOME/.bashrc
 
 DOTFILES_DIR=`pwd`
-DOT_FILES=( .emacs.d .bashrc .tmux.conf .zshenv .zshrc )
+DOT_FILES=( .emacs.d .bashrc .tmux.conf .zshenv .zshrc crun_gcc.sh cpprun_gcc.sh )
 
 for file in ${DOT_FILES[@]}
 do
