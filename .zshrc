@@ -87,6 +87,8 @@ alias sl="~/work/sl/pyonpyon"
 alias cls="clear"
 alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 alias rtags="rc -J ."
+alias make="crror make"
+alias cmake="crror cmake"
 
 # Rtags
 rdm --daemon

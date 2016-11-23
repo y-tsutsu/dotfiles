@@ -58,5 +58,9 @@ mkdir build && cd build
 cmake ..
 make && sudo make install
 
+# crror
+sudo aptitude install golang -y
+git clone https://github.com/bearmini/crror.git ~/crror
+
 # etc.
 sudo aptitude install ruby nodejs npm tig git-cola libncurses5-dev gdb -y
