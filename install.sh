@@ -63,4 +63,4 @@ sudo aptitude install golang -y
 git clone https://github.com/bearmini/crror.git ~/crror
 
 # etc.
-sudo aptitude install ruby nodejs npm tig git-cola libncurses5-dev gdb -y
+sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb -y
