@@ -8,5 +8,5 @@ eval "$(pyenv init -)"
 #eval "$(exenv init -)"
 
 # crror
-export PATH=$PATH:~/crror
+export PATH=$HOME/crror:$PATH
 export GOPATH=~/golang
