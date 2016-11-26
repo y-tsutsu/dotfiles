@@ -89,6 +89,8 @@ alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)
 alias rtags="rc -J ."
 alias make="crror make"
 alias cmake="crror cmake"
+alias gcc="crror gcc"
+alias g++="crror g++"
 
 # Rtags
 rdm --daemon
