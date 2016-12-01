@@ -10,8 +10,8 @@ cd $HOME
 #sudo aptitude install open-vm-tools open-vm-tools-desktop -y
 
 # git subversion（git本体は事前にインストール）
-git config --global user.name "tsutsu"
-git config --global user.email "tsutsu@example.com"
+git config --global user.name 'tsutsu'
+git config --global user.email 'tsutsu@example.com'
 git config --global core.editor 'emacs -nw'
 git config --global color.diff auto
 git config --global color.status auto
@@ -20,6 +20,7 @@ git config --global push.default simple
 git config --global core.precomposeunicode true
 git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+git config --global merge.tool 'meld'
 sudo aptitude install subversion subversion-tools -y
 
 # terminator zsh tmux
@@ -63,4 +64,4 @@ sudo aptitude install golang -y
 git clone https://github.com/bearmini/crror.git ~/crror
 
 # etc.
-sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb fonts-inconsolata -y
+sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb meld fonts-inconsolata -y
