@@ -1,0 +1,16 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "runner.languageMap": {
+        "c": "~/vscrunner/crun_gcc.sh",
+        "cpp": "~/vscrunner/cpprun_gcc.sh"
+    },
+
+    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+    "editor.renderWhitespace": "boundary",
+
+    // フォント ファミリを制御します。
+    "editor.fontFamily": "'Inconsolata', 'Droid Sans Mono', 'Courier New', monospace, 'IPAGothic', 'Droid Sans Fallback'",
+
+    // Whether to lint Python files using pylint.
+    "python.linting.pylintEnabled": false
+}
