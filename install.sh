@@ -65,3 +65,4 @@ git clone https://github.com/bearmini/crror.git ~/crror
 
 # etc.
 sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb meld fonts-inconsolata -y
+sudo ln -s /usr/bin/nodejs /usr/bin/node
