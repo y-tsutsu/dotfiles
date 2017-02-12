@@ -63,6 +63,9 @@ make && sudo make install
 sudo aptitude install golang -y
 git clone https://github.com/bearmini/crror.git ~/crror
 
+# Qt
+sudo aptitude install qt5-default -y
+
 # etc.
-sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev -y
+sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev curl -y
 sudo ln -s /usr/bin/nodejs /usr/bin/node
