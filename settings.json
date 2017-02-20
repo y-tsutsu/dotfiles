@@ -13,5 +13,8 @@
     "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'Courier New', monospace, IPAGothic, 'Droid Sans Fallback'",
 
     // Whether to lint Python files using pylint.
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+
+    // Allow bookmarks to be saved and restored, even if you close or change the Project
+    "bookmarks.saveBookmarksBetweenSessions": true
 }
