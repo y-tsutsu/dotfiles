@@ -67,5 +67,5 @@ git clone https://github.com/bearmini/crror.git ~/crror
 sudo aptitude install qt5-default -y
 
 # etc.
-sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl -y
+sudo aptitude install ruby nodejs npm tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl graphviz doxygen -y
 sudo ln -s /usr/bin/nodejs /usr/bin/node
