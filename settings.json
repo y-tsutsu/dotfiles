@@ -10,7 +10,10 @@
     "editor.renderWhitespace": "boundary",
 
     // フォント ファミリを制御します。
-    "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'Courier New', monospace, IPAGothic, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'",
+
+    // 有効な場合、開いているファイルの完全なパスがウィンドウのタイトルに表示されます。
+    "window.showFullPath": true,
 
     // Whether to lint Python files using pylint.
     "python.linting.pylintEnabled": false,
