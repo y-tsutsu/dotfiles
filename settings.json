@@ -1,19 +1,29 @@
 // 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
+    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+    "editor.renderWhitespace": "boundary",
+
+    // フォント ファミリを制御します。
+    "editor.fontFamily": "'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'", 
+
+    // アクティブなエディターに基づいてウィンドウのタイトルを制御します。変数は、コンテキストに基づいて置換されます:
+    // ${activeEditorName}: 例: myFile.txt
+    // ${activeFilePath}: 例: /Users/Development/myProject/myFile.txt
+    // ${rootName}: 例: myProject
+    // ${rootPath}: 例: /Users/Development/myProject
+    // ${appName}: 例: VS Code
+    // ${dirty}: アクティブなエディターがダーティである場合のダーティ インジケーター
+    // ${separator}: 値のある変数で囲まれた場合にのみ表示される条件付き区切り記号 (' - ')
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+
+    // ワークベンチで使用するアイコンのテーマを指定します。
+    "workbench.iconTheme": "vs-seti",
+
     // Specify language name as key, specify execuable as value
     "runner.languageMap": {
         "c": "~/vscrunner/crun_gcc.sh",
         "cpp": "~/vscrunner/cpprun_gcc.sh"
     },
-
-    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
-    "editor.renderWhitespace": "boundary",
-
-    // フォント ファミリを制御します。
-    "editor.fontFamily": "'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'",
-
-    // 有効な場合、開いているファイルの完全なパスがウィンドウのタイトルに表示されます。
-    "window.showFullPath": true,
 
     // Whether to lint Python files using pylint.
     "python.linting.pylintEnabled": false,
