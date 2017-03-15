@@ -1,9 +1,0 @@
-# Emacsのレイアウト崩れ防止
-
-[Desktop Entry]
-Encoding=UTF-8
-Name=terminator-cjk
-Exec=env VTE_CJK_WIDTH=1 terminator
-Icon=terminator
-Type=Application
-Categories=Development;
