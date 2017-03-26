@@ -32,9 +32,9 @@ git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-pyenv install 3.5.2
-pyenv install 2.7.9
-pyenv global 3.5.2
+pyenv install 3.6.1
+pyenv install 2.7.13
+pyenv global 3.6.1
 
 # emacs vim
 sudo aptitude install emacs vim -y
