@@ -29,5 +29,15 @@
     "python.linting.pylintEnabled": false,
 
     // Allow bookmarks to be saved and restored, even if you close or change the Project
-    "bookmarks.saveBookmarksBetweenSessions": true
+    "bookmarks.saveBookmarksBetweenSessions": true,
+
+    "[cpp]": {
+        // 入力中にクイック候補を表示するかどうかを制御します
+        "editor.quickSuggestions": false
+    },
+
+    "[c]": {
+        // 入力中にクイック候補を表示するかどうかを制御します
+        "editor.quickSuggestions": false
+    }
 }
