@@ -16,6 +16,9 @@
     // ${separator}: 値のある変数で囲まれた場合にのみ表示される条件付き区切り記号 (' - ')
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
 
+    // 任意の表示グループが開かれた場合に、そこにエディターを表示するかどうかを制御します。無効にした場合、エディターは現在のアクティブなエディター グループに優先して開かれます。有効にした場合は、現在のアクティブなエディター グループにもう一度開くのではなく、既に開いているエディターが表示されます。特定のグループ内や現在アクティブなグループの横に強制的にエディターを開いた場合などに、この設定が無視される場合もあることにご注意ください。
+    "workbench.editor.revealIfOpen": true,
+
     // ワークベンチで使用するアイコンのテーマを指定します。
     "workbench.iconTheme": "vs-seti",
 
@@ -28,8 +31,8 @@
     // Whether to lint Python files using pylint.
     "python.linting.pylintEnabled": false,
 
-    // Allow bookmarks to be saved and restored, even if you close or change the Project
-    "bookmarks.saveBookmarksBetweenSessions": true,
+    // Allow bookmarks to be saved (and restored) locally in the opened Project/Folder instead of VS Code
+    "bookmarks.saveBookmarksInProject": true,
 
     "[cpp]": {
         // 入力中にクイック候補を表示するかどうかを制御します
