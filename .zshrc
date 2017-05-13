@@ -82,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tmux="tmux -2"
 alias emacs="emacs -nw"
 alias sl="~/work/sl/pyonpyon"
 alias cls="clear"

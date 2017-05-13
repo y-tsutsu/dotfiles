@@ -114,3 +114,27 @@ fi
 
 # エイリアス
 alias tmux="tmux -2"
+alias emacs="emacs -nw"
+alias sl="~/work/sl/pyonpyon"
+alias cls="clear"
+alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+alias rtags="rc -J ."
+
+# Rtags
+rdm --daemon
+
+# 環境変数
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+# Elixir
+# export PATH=$HOME/.exenv/bin:$PATH
+# eval "$(exenv init -)"
+# crror
+export PATH=$HOME/crror:$PATH
+export GOPATH=$HOME/golang
+# gcc color
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# bash
+export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
