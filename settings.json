@@ -29,18 +29,5 @@
     },
 
     // Whether to lint Python files using pylint.
-    "python.linting.pylintEnabled": false,
-
-    // Allow bookmarks to be saved (and restored) locally in the opened Project/Folder instead of VS Code
-    "bookmarks.saveBookmarksInProject": true,
-
-    "[cpp]": {
-        // 入力中にクイック候補を表示するかどうかを制御します
-        "editor.quickSuggestions": false
-    },
-
-    "[c]": {
-        // 入力中にクイック候補を表示するかどうかを制御します
-        "editor.quickSuggestions": false
-    }
+    "python.linting.pylintEnabled": false
 }
