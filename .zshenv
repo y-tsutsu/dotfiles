@@ -7,6 +7,9 @@ eval "$(pyenv init -)"
 # export PATH=$HOME/.exenv/bin:$PATH
 # eval "$(exenv init -)"
 
+# Rust
+# source $HOME/.cargo/env
+
 # crror
 export PATH=$HOME/crror:$PATH
 export GOPATH=$HOME/golang
