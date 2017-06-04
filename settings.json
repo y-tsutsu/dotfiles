@@ -22,10 +22,10 @@
     // ワークベンチで使用するアイコンのテーマを指定します。
     "workbench.iconTheme": "vs-seti",
 
-    // Specify language name as key, specify execuable as value
-    "runner.languageMap": {
-        "c": "~/vscrunner/crun_gcc.sh",
-        "cpp": "~/vscrunner/cpprun_gcc.sh"
+    // Set the executor of each language.
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt"
     },
 
     // Whether to lint Python files using pylint.
