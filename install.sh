@@ -50,14 +50,14 @@ git submodule init
 git submodule update
 mkdir build && cd build
 cmake ..
-make && sudo make install
+make -j2 && sudo make install
 
 # rtags setup
 git clone https://github.com/rizsotto/Bear $HOME/Bear
 cd $HOME/Bear
 mkdir build && cd build
 cmake ..
-make && sudo make install
+make -j2 && sudo make install
 
 # crror
 sudo aptitude install golang -y
