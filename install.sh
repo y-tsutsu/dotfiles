@@ -35,6 +35,7 @@ eval "$(pyenv init -)"
 pyenv install 3.6.2
 pyenv install 2.7.13
 pyenv global 3.6.2
+pip install jupyter numpy matplotlib pyqt5 opencv
 
 # emacs vim
 sudo apt install emacs vim -y
@@ -68,8 +69,8 @@ sudo apt install qt5-default -y
 
 # etc.
 sudo apt install ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
-graphviz doxygen gconf2 locate -y
+graphviz doxygen gconf2 locate rpm -y
 
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
-sudo apt install nodejs
+sudo apt install nodejs -y
