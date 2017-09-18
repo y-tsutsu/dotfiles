@@ -12,7 +12,7 @@ cd $HOME
 # git subversion（git本体は事前にインストール）
 git config --global user.name 'tsutsu'
 git config --global user.email 'tsutsu@example.com'
-git config --global core.editor 'emacs -nw'
+git config --global core.editor 'code --wait'
 git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
@@ -35,7 +35,7 @@ eval "$(pyenv init -)"
 pyenv install 3.6.2
 pyenv install 2.7.13
 pyenv global 3.6.2
-pip install jupyter numpy matplotlib pyqt5 opencv
+pip install jupyter numpy matplotlib pyqt5 opencv-python
 
 # emacs vim
 sudo apt install emacs vim -y
@@ -66,6 +66,9 @@ git clone https://github.com/bearmini/crror.git ~/crror
 
 # Qt
 sudo apt install qt5-default -y
+
+# Heroku
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
 sudo apt install ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
