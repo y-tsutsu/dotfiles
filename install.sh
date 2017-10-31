@@ -35,7 +35,7 @@ eval "$(pyenv init -)"
 pyenv install 3.6.3
 pyenv install 2.7.13
 pyenv global 3.6.3
-pip install jupyter numpy matplotlib pyqt5 opencv-python
+pip install autopep8 jupyter numpy matplotlib pyqt5 opencv-python
 
 # emacs vim
 sudo apt install emacs vim -y
