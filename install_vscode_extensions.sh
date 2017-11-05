@@ -18,6 +18,7 @@ pkglist=(
     michelemelluso.code-beautifier
     ms-vscode.cpptools
     ms-vscode.csharp
+    shakram02.bash-beautify
     twxs.cmake
     wmaurer.vscode-jumpy
 )
