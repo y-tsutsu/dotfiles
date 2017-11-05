@@ -72,7 +72,7 @@ wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
 sudo apt install ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
-graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils -y
+graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme -y
 
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
