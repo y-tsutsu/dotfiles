@@ -1,35 +1,14 @@
-// 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
-    // ミニマップを表示するかどうかを制御します
     "editor.minimap.enabled": false,
-
-    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
     "editor.renderWhitespace": "boundary",
-
-    // Windows でターミナルが使用するシェルのパス。 Windows に同梱されているシェルを使用する場合 (cmd、PowerShell、または Bash on Ubuntu) 。
     "terminal.integrated.shell.windows": "C:\\Program Files (x86)\\Git\\usr\\bin\\bash.exe",
-
-    // アクティブなエディターに基づいてウィンドウのタイトルを制御します。変数は、コンテキストに基づいて置換されます:
-    // ${activeEditorName}: 例: myFile.txt
-    // ${activeFilePath}: 例: /Users/Development/myProject/myFile.txt
-    // ${rootName}: 例: myProject
-    // ${rootPath}: 例: /Users/Development/myProject
-    // ${appName}: 例: VS Code
-    // ${dirty}: アクティブなエディターがダーティである場合のダーティ インジケーター
-    // ${separator}: 値のある変数で囲まれた場合にのみ表示される条件付き区切り記号 (' - ')
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
-
-    // 任意の表示グループが開かれた場合に、そこにエディターを表示するかどうかを制御します。無効にした場合、エディターは現在のアクティブなエディター グループに優先して開かれます。有効にした場合は、現在のアクティブなエディター グループにもう一度開くのではなく、既に開いているエディターが表示されます。特定のグループ内や現在アクティブなグループの横に強制的にエディターを開いた場合などに、この設定が無視される場合もあることにご注意ください。
     "workbench.editor.revealIfOpen": true,
-
-    // Set the executor of each language.
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt.exe",
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt.exe",
         "csharp": "cd $dir && dotnet run --configuration Release",
         "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt"
     },
-
-    // Whether to lint Python files using pylint.
     "python.linting.pylintEnabled": false
 }
