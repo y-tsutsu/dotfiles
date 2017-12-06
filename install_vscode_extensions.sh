@@ -8,7 +8,6 @@
 pkglist=(
     alefragnani.Bookmarks
     donjayamanne.githistory
-    donjayamanne.python
     EditorConfig.EditorConfig
     espresso3389.sushi-vscode
     formulahendry.code-runner
@@ -16,9 +15,12 @@ pkglist=(
     ionutvmi.path-autocomplete
     jebbs.plantuml
     michelemelluso.code-beautifier
+    ms-python.python
     ms-vscode.cpptools
     ms-vscode.csharp
+    ryu1kn.annotator
     shakram02.bash-beautify
+    teabyii.ayu
     twxs.cmake
     wmaurer.vscode-jumpy
 )
