@@ -9,7 +9,6 @@ pkglist=(
     alefragnani.Bookmarks
     donjayamanne.githistory
     EditorConfig.EditorConfig
-    espresso3389.sushi-vscode
     formulahendry.code-runner
     hars.CppSnippets
     ionutvmi.path-autocomplete

@@ -1,7 +1,6 @@
 call code --install-extension alefragnani.Bookmarks
 call code --install-extension donjayamanne.githistory
 call code --install-extension EditorConfig.EditorConfig
-call code --install-extension espresso3389.sushi-vscode
 call code --install-extension formulahendry.code-runner
 call code --install-extension hars.CppSnippets
 call code --install-extension ionutvmi.path-autocomplete
@@ -10,6 +9,7 @@ call code --install-extension michelemelluso.code-beautifier
 call code --install-extension ms-python.python
 call code --install-extension ms-vscode.cpptools
 call code --install-extension ms-vscode.csharp
+call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension ryu1kn.annotator
 call code --install-extension shakram02.bash-beautify
 call code --install-extension teabyii.ayu
