@@ -11,6 +11,7 @@ call code --install-extension ms-vscode.cpptools
 call code --install-extension ms-vscode.csharp
 call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension ryu1kn.annotator
+call code --install-extension s-nlf-fh.glassit
 call code --install-extension shakram02.bash-beautify
 call code --install-extension teabyii.ayu
 call code --install-extension twxs.cmake
