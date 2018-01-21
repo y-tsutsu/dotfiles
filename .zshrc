@@ -84,7 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux="tmux -2"
 alias emacs="emacs -nw"
-alias sl="~/work/sl/pyonpyon"
 alias cls="clear"
 alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 alias rtags="rc -J ."
