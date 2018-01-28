@@ -67,7 +67,7 @@ sudo apt install -y golang
 git clone https://github.com/bearmini/crror.git ~/crror
 
 # Qt
-sudo apt install -y qt5-default
+sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
 
 # Heroku
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
