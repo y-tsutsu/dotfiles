@@ -6,9 +6,11 @@
 
 # Visual Studio Code :: Package list
 pkglist=(
-    alefragnani.Bookmarks
-    donjayamanne.githistory
     EditorConfig.EditorConfig
+    PeterJausovec.vscode-docker
+    alefragnani.Bookmarks
+    bbenoist.QML
+    donjayamanne.githistory
     formulahendry.code-runner
     hars.CppSnippets
     ionutvmi.path-autocomplete

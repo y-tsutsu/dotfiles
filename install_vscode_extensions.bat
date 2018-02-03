@@ -1,4 +1,5 @@
 call code --install-extension alefragnani.Bookmarks
+call code --install-extension bbenoist.QML
 call code --install-extension donjayamanne.githistory
 call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
