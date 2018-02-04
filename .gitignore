@@ -38,3 +38,4 @@ packages/
 .emacs.d/recentf
 .emacs.d/auto-save-list/
 pyonpyon/sl/
+requirements.txt
