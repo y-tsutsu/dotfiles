@@ -2,7 +2,11 @@
     "diffEditor.renderSideBySide": false,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
-    "terminal.integrated.shell.windows": "C:\\Program Files (x86)\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/K",
+        "C:\\cmder\\vscode.bat"
+    ],
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
