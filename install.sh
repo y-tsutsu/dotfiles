@@ -96,10 +96,11 @@ sudo apt install -y -f
 rm gitkraken-amd64.deb
 
 # Vivaldi
-wget -q https://downloads.vivaldi.com/stable/vivaldi-stable_1.13.1008.40-1_amd64.deb
-sudo dpkg -i vivaldi-stable_1.13.1008.40-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_1.14.1077.45-1_amd64.deb
+wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
+sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
-rm vivaldi-stable_1.13.1008.40-1_amd64.deb
+rm $VIVALDI_DEB
 
 # Docker
 sudo apt remove docker docker-engine docker.io
