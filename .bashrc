@@ -142,3 +142,13 @@ export GOPATH=$HOME/golang
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 # bash
 export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
+
+# コマンド矯正
+function command_not_found_handle(){
+    if [ -e /usr/bin/jp2a ];then
+        if [ -e ~/serval.jpg ];then
+            jp2a ~/serval.jpg -i
+        fi
+    fi
+    echo "ハァ…？$1とか何言ってんの？\nコマンドもろくに覚えられないなんて、アンタどうしようもないクズね。"
+}

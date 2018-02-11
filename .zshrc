@@ -90,3 +90,13 @@ alias rtags="rc -J ."
 
 # Rtags
 rdm --daemon
+
+# コマンド矯正
+function command_not_found_handler(){
+    if [ -e /usr/bin/jp2a ];then
+        if [ -e ~/serval.jpg ];then
+            jp2a ~/serval.jpg -i
+        fi
+    fi
+    echo "ハァ…？$1とか何言ってんの？\nコマンドもろくに覚えられないなんて、アンタどうしようもないクズね。"
+}

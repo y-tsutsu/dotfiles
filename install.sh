@@ -74,7 +74,7 @@ wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
 sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
-    graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev
+    graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a
 
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
@@ -114,7 +114,7 @@ sudo add-apt-repository \
 sudo apt update
 sudo apt install -y docker-ce
 
-# .NET
+# .NET Core
 sudo apt install -y libunwind8 gettext
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
