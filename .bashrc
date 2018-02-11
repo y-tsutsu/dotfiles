@@ -122,6 +122,9 @@ alias rtags="rc -J ."
 # Rtags
 rdm --daemon
 
+# LANG for Visual Studio Code
+export LANG=ja_JP.UTF-8
+
 # 環境変数
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
