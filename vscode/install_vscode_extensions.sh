@@ -15,6 +15,7 @@ pkglist=(
     hars.CppSnippets
     ionutvmi.path-autocomplete
     jebbs.plantuml
+    liximomo.sftp
     michelemelluso.code-beautifier
     ms-python.python
     ms-vscode.cpptools
