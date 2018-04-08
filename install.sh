@@ -32,9 +32,9 @@ git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-pyenv install 3.6.4
+pyenv install 3.6.5
 pyenv install 2.7.14
-pyenv global 3.6.4
+pyenv global 3.6.5
 pip install pip-tools
 pip-compile $DOTFILES_DIR/requirements.in
 pip-sync $DOTFILES_DIR/requirements.txt
