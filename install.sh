@@ -113,6 +113,9 @@ sudo add-apt-repository \
     stable"
 sudo apt update
 sudo apt install -y docker-ce
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo systemctl restart docker
 
 # .NET Core
 sudo apt install -y libunwind8 gettext
