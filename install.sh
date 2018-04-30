@@ -35,6 +35,8 @@ eval "$(pyenv init -)"
 pyenv install 3.6.5
 pyenv install 2.7.14
 pyenv global 3.6.5
+python --version
+pip install --upgrade pip
 pip install pip-tools
 pip-compile $DOTFILES_DIR/requirements.in
 pip-sync $DOTFILES_DIR/requirements.txt
