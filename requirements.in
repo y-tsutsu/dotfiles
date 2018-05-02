@@ -3,6 +3,7 @@ jupyter
 matplotlib
 numpy
 opencv-python
+pipenv
 pyqt5
 scipy
 seaborn

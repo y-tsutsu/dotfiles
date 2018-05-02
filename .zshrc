@@ -100,3 +100,12 @@ function command_not_found_handler(){
     fi
     echo "ハァ…？$1とか何言ってんの？\nコマンドもろくに覚えられないなんて、アンタどうしようもないクズね。"
 }
+
+#compdef pipenv
+_pipenv() {
+  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _PIPENV_COMPLETE=complete-zsh  pipenv)
+}
+if [[ "$(basename ${(%):-%x})" != "_pipenv" ]]; then
+  autoload -U compinit && compinit
+  compdef _pipenv pipenv
+fi
