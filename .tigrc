@@ -1,10 +1,11 @@
 bind generic F none
-bind main F !git fetch
-bind main S !git stash save "%(prompt Enter stash comment: )"
+bind main F ?git fetch
+bind main S ?git stash save "%(prompt Enter stash comment: )"
 bind main ! ?git reset --soft HEAD^
-bind main B !git rebase -i %(commit)
-bind refs n !git checkout -b "%(prompt Enter new branch name: )" %(branch)
-bind refs M !git merge %(branch)
-bind refs P !git push origin %(branch)
-bind refs L !git pull origin %(branch)
+bind main B ?git rebase -i %(commit)
+bind main x @bash -c "echo -n '%(commit)' | clip"
+bind refs n ?git checkout -b "%(prompt Enter new branch name: )" %(branch)
+bind refs M ?git merge %(branch)
+bind refs P ?git push -u origin %(branch)
+bind refs L ?git pull origin %(branch)
 set main-view = id date author commit-title:graph=yes,refs=yes
