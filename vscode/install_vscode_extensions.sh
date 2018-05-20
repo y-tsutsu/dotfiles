@@ -7,6 +7,7 @@
 # Visual Studio Code :: Package list
 pkglist=(
     EditorConfig.EditorConfig
+    MS-CEINTL.vscode-language-pack-ja
     PeterJausovec.vscode-docker
     alefragnani.Bookmarks
     bbenoist.QML

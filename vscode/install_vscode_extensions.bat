@@ -5,9 +5,10 @@ call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
 call code --install-extension hars.CppSnippets
 call code --install-extension ionutvmi.path-autocomplete
-call code --install-extension liximomo.sftp
 call code --install-extension jebbs.plantuml
+call code --install-extension liximomo.sftp
 call code --install-extension michelemelluso.code-beautifier
+call code --install-extension MS-CEINTL.vscode-language-pack-ja
 call code --install-extension ms-python.python
 call code --install-extension ms-vscode.cpptools
 call code --install-extension ms-vscode.csharp
