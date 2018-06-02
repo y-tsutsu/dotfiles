@@ -12,6 +12,7 @@ pkglist=(
     alefragnani.Bookmarks
     bbenoist.QML
     donjayamanne.githistory
+    eamodio.gitlens
     formulahendry.code-runner
     hars.CppSnippets
     ionutvmi.path-autocomplete
@@ -21,7 +22,6 @@ pkglist=(
     ms-python.python
     ms-vscode.cpptools
     ms-vscode.csharp
-    ryu1kn.annotator
     shakram02.bash-beautify
     teabyii.ayu
     twxs.cmake
