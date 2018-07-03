@@ -79,7 +79,8 @@ sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld clipit fon
     graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a
 
 # node(npm)
-curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt update
 sudo apt install -y nodejs
 
 # Visual Studio Code
