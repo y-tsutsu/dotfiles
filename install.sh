@@ -72,7 +72,7 @@ git clone https://github.com/bearmini/crror.git ~/crror
 sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
 
 # Heroku
-wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
 sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
