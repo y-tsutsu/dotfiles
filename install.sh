@@ -20,7 +20,7 @@ git config --global push.default simple
 git config --global core.precomposeunicode true
 git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
-git config --global merge.tool 'meld'
+git config --global merge.tool 'code --wait "$MERGED" '
 sudo apt install -y subversion subversion-tools
 
 # terminator zsh tmux
