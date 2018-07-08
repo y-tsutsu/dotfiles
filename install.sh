@@ -134,3 +134,6 @@ cd /usr/src/gtest
 sudo cmake .
 sudo make -j2
 sudo make install
+
+sudo apt update
+sudo apt upgrade -y
