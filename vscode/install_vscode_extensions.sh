@@ -18,6 +18,7 @@ pkglist=(
     ionutvmi.path-autocomplete
     jebbs.plantuml
     liximomo.sftp
+    mechatroner.rainbow-csv
     michelemelluso.code-beautifier
     ms-python.python
     ms-vscode.cpptools
