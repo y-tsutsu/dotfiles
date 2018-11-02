@@ -14,6 +14,8 @@ do
     fi
 done
 
+ln -s $DOTFILES_DIR/.flake8 $HOME/.config/.flake8
+
 if [ ! -e $HOME/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
 fi
