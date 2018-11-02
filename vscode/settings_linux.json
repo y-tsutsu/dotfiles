@@ -21,5 +21,6 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false
 }

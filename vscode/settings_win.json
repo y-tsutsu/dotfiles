@@ -26,5 +26,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
     "glassit.alpha": 240,
+    "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false
 }
