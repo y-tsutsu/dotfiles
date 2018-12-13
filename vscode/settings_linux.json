@@ -5,7 +5,6 @@
     "editor.renderWhitespace": "boundary",
     "terminal.integrated.cursorBlinking": true,
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
-    "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
     "workbench.iconTheme": "ayu",
