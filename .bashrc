@@ -139,6 +139,7 @@ _pipenv_completion() {
     return 0
 }
 complete -F _pipenv_completion -o default pipenv
+eval "$(pipenv --completion)"
 # Elixir
 # export PATH=$HOME/.exenv/bin:$PATH
 # eval "$(exenv init -)"
