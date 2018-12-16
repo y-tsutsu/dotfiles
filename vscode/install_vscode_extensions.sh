@@ -23,6 +23,7 @@ pkglist=(
     ms-python.python
     ms-vscode.cpptools
     ms-vscode.csharp
+    ms-vscode.Go
     shakram02.bash-beautify
     teabyii.ayu
     twxs.cmake
