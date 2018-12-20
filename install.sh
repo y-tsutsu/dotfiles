@@ -21,6 +21,7 @@ git config --global core.precomposeunicode true
 git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 git config --global merge.tool 'code --wait "$MERGED" '
+git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
 # terminator zsh tmux
@@ -64,8 +65,32 @@ mkdir build && cd build
 cmake ..
 make -j2 && sudo make install
 
+# golang
+git clone https://github.com/syndbg/goenv.git $HOME/.goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+goenv install 1.11.4
+goenv global 1.11.4
+goenv rehash
+mkdir $HOME/dev
+go get github.com/motemen/gore
+go get github.com/nsf/gocode
+go get github.com/k0kubun/pp
+go get golang.org/x/tools/cmd/godoc
+go get github.com/jessevdk/go-assets-builder
+cd /tmp/
+wget https://github.com/motemen/ghq/releases/download/v0.8.0/ghq_linux_amd64.zip /tmp/
+wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz /tmp/
+wget https://github.com/Masterminds/glide/releases/download/v0.13.2/glide-v0.13.2-linux-amd64.zip tmp/
+unzip ghq_linux_amd64.zip
+sudo mv ghq /usr/local/bin/.
+tar -axvf peco_linux_amd64.tar.gz
+sudo mv peco_linux_amd64/peco /usr/local/bin/.
+unzip glide-v0.13.2-linux-amd64.zip
+sudo mv linux-amd64/glide /usr/local/bin/.
+
 # crror
-sudo apt install -y golang
 git clone https://github.com/bearmini/crror.git ~/crror
 
 # Qt

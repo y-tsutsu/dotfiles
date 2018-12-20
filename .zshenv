@@ -16,9 +16,16 @@ eval "$(pipenv --completion)"
 # Rust
 # source $HOME/.cargo/env
 
+# goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+# golang
+export GOPATH=$HOME/dev
+export PATH=$GOPATH/bin:$PATH
+
 # crror
 export PATH=$HOME/crror:$PATH
-export GOPATH=$HOME/golang
 
 # gcc color
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
