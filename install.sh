@@ -70,6 +70,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
+export GOPATH=$HOME/dev
+export PATH=$GOPATH/bin:$PATH
 goenv install 1.11.4
 goenv global 1.11.4
 goenv rehash
@@ -80,9 +82,9 @@ go get github.com/k0kubun/pp
 go get golang.org/x/tools/cmd/godoc
 go get github.com/jessevdk/go-assets-builder
 cd /tmp/
-wget https://github.com/motemen/ghq/releases/download/v0.8.0/ghq_linux_amd64.zip /tmp/
-wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz /tmp/
-wget https://github.com/Masterminds/glide/releases/download/v0.13.2/glide-v0.13.2-linux-amd64.zip tmp/
+wget https://github.com/motemen/ghq/releases/download/v0.8.0/ghq_linux_amd64.zip
+wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
+wget https://github.com/Masterminds/glide/releases/download/v0.13.2/glide-v0.13.2-linux-amd64.zip
 unzip ghq_linux_amd64.zip
 sudo mv ghq /usr/local/bin/.
 tar -axvf peco_linux_amd64.tar.gz
