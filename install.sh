@@ -24,6 +24,11 @@ git config --global merge.tool 'code --wait "$MERGED" '
 git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
+# oh-my-zsh
+if [ ! -e $HOME/.oh-my-zsh ]; then
+    git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+fi
+
 # terminator zsh tmux
 sudo apt install -y terminator zsh tmux xsel
 
