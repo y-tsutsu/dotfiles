@@ -83,21 +83,21 @@ goenv install 1.11.4
 goenv global 1.11.4
 goenv rehash
 mkdir $HOME/dev
-go get github.com/motemen/gore
-go get github.com/nsf/gocode
-go get github.com/k0kubun/pp
-go get golang.org/x/tools/cmd/godoc
-go get github.com/jessevdk/go-assets-builder
+go get -u github.com/motemen/gore
+go get -u github.com/nsf/gocode
+go get -u github.com/k0kubun/pp
+go get -u golang.org/x/tools/cmd/godoc
+go get -u github.com/jessevdk/go-assets-builder
 cd /tmp/
 wget https://github.com/motemen/ghq/releases/download/v0.8.0/ghq_linux_amd64.zip
 wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
-wget https://github.com/Masterminds/glide/releases/download/v0.13.2/glide-v0.13.2-linux-amd64.zip
+wget https://github.com/golang/dep/releases/download/v0.5.0/dep-linux-amd64
 unzip ghq_linux_amd64.zip
-sudo mv ghq /usr/local/bin/.
+mv ghq $GOPATH/bin/.
 tar -axvf peco_linux_amd64.tar.gz
-sudo mv peco_linux_amd64/peco /usr/local/bin/.
-unzip glide-v0.13.2-linux-amd64.zip
-sudo mv linux-amd64/glide /usr/local/bin/.
+mv peco_linux_amd64/peco $GOPATH/bin/.
+chmod 755 dep-linux-amd64
+mv dep-linux-amd64 $GOPATH/bin/dep
 
 # crror
 git clone https://github.com/bearmini/crror.git ~/crror
