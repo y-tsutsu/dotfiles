@@ -14,4 +14,4 @@ do
     fi
 done
 
-ln -s $DOTFILES_DIR/.flake8 $HOME/.config/.flake8
+ln -s $DOTFILES_DIR/.flake8 $HOME/.config/flake8
