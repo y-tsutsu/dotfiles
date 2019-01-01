@@ -15,6 +15,7 @@ call code --install-extension ms-python.python
 call code --install-extension ms-vscode.cpptools
 call code --install-extension ms-vscode.csharp
 call code --install-extension ms-vscode.Go
+call code --install-extension octref.vetur
 call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension s-nlf-fh.glassit
 call code --install-extension shakram02.bash-beautify
