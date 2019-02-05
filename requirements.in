@@ -5,6 +5,7 @@ matplotlib
 numpy
 opencv-python
 pipenv
+pyperclip
 pyqt5
 rope
 scipy
