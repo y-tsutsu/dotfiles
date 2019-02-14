@@ -8,6 +8,7 @@
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
     "workbench.iconTheme": "ayu",
+    "workbench.settings.useSplitJSON": true,
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt",
