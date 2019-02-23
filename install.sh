@@ -61,14 +61,14 @@ git submodule init
 git submodule update
 mkdir build && cd build
 cmake ..
-make -j2 && sudo make install
+make -j4 && sudo make install
 
 # rtags setup
 git clone https://github.com/rizsotto/Bear $HOME/Bear
 cd $HOME/Bear
 mkdir build && cd build
 cmake ..
-make -j2 && sudo make install
+make -j4 && sudo make install
 
 # golang
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
@@ -164,7 +164,7 @@ sudo apt install -y dotnet-sdk-2.1.4
 sudo apt install -y libgtest-dev
 cd /usr/src/gtest
 sudo cmake .
-sudo make -j2
+sudo make -j4
 sudo make install
 
 sudo apt update
