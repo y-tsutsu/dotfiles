@@ -21,6 +21,7 @@ pkglist=(
     ms-vscode.Go
     octref.vetur
     PeterJausovec.vscode-docker
+    RomanPeshkov.vscode-text-tables
     shakram02.bash-beautify
     teabyii.ayu
     twxs.cmake

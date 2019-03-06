@@ -17,6 +17,7 @@ call code --install-extension ms-vscode.csharp
 call code --install-extension ms-vscode.Go
 call code --install-extension octref.vetur
 call code --install-extension pmiossec.vscode-gitextensions
+call code --install-extension RomanPeshkov.vscode-text-tables
 call code --install-extension s-nlf-fh.glassit
 call code --install-extension shakram02.bash-beautify
 call code --install-extension teabyii.ayu
