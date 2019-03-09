@@ -4,7 +4,6 @@ call code --install-extension donjayamanne.githistory
 call code --install-extension eamodio.gitlens
 call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
-call code --install-extension hars.CppSnippets
 call code --install-extension ionutvmi.path-autocomplete
 call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs

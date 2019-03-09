@@ -8,7 +8,6 @@ pkglist=(
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
-    hars.CppSnippets
     ionutvmi.path-autocomplete
     jebbs.plantuml
     Kelvin.vscode-sshfs
