@@ -21,6 +21,7 @@ export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
 # golang
+export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/dev
 export PATH=$GOPATH/bin:$PATH
 

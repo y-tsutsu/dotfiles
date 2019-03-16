@@ -75,12 +75,13 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-export GOPATH=$HOME/dev
-export PATH=$GOPATH/bin:$PATH
 goenv install 1.11.4
 goenv global 1.11.4
 goenv rehash
 mkdir $HOME/dev
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=$HOME/dev
+export PATH=$GOPATH/bin:$PATH
 go get -u github.com/motemen/gore
 go get -u github.com/nsf/gocode
 go get -u github.com/k0kubun/pp
