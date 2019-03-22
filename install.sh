@@ -39,7 +39,7 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 pyenv install 3.7.2
-pyenv install 2.7.14
+pyenv install 2.7.16
 pyenv global 3.7.2
 python --version
 pip install --upgrade pip
