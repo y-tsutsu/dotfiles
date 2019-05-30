@@ -20,8 +20,8 @@ pkglist=(
     ms-vscode.Go
     octref.vetur
     PeterJausovec.vscode-docker
-    RomanPeshkov.vscode-text-tables
     shakram02.bash-beautify
+    shuworks.vscode-table-formatter
     teabyii.ayu
     twxs.cmake
     wmaurer.vscode-jumpy
