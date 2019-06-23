@@ -10,7 +10,6 @@ pkglist=(
     formulahendry.code-runner
     ionutvmi.path-autocomplete
     jebbs.plantuml
-    Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
     michelemelluso.code-beautifier
     MS-CEINTL.vscode-language-pack-ja
@@ -18,6 +17,7 @@ pkglist=(
     ms-vscode.cpptools
     ms-vscode.csharp
     ms-vscode.Go
+    ms-vscode-remote.vscode-remote-extensionpack
     octref.vetur
     PeterJausovec.vscode-docker
     shakram02.bash-beautify

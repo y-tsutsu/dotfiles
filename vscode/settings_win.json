@@ -26,5 +26,6 @@
     "gitlens.currentLine.enabled": false,
     "glassit.alpha": 240,
     "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+    "remote.SSH.showLoginTerminal": true
 }
