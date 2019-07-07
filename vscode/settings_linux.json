@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'", 
+    "editor.fontFamily": "HackGen35, 'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'", 
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "terminal.integrated.cursorBlinking": true,

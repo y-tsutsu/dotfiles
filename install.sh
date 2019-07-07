@@ -85,7 +85,7 @@ sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
-sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev curl graphviz \
+sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev curl graphviz clang libclang-dev cmake \
     doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file
 
 # node(npm)
@@ -131,19 +131,27 @@ sudo gpasswd -a $USER docker
 sudo systemctl restart docker
 
 # .NET Core
-sudo apt install -y libunwind8 gettext
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/dotnetdev.list'
-sudo apt update
-sudo apt install -y dotnet-sdk-2.1.4
+# sudo apt install -y libunwind8 gettext
+# curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+# sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+# sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/dotnetdev.list'
+# sudo apt update
+# sudo apt install -y dotnet-sdk-2.1.4
+
+# HackGen
+cd /tmp/
+wget https://github.com/yuru7/HackGen/releases/download/v1.1.0/HackGen_v1.1.0.zip
+unzip HackGen_v1.1.0.zip
+sudo mkdir -p /usr/share/fonts/HackGen
+sudo mv ./HackGen*.ttf /usr/share/fonts/HackGen/.
+sudo fc-cache -fv
 
 # Google Test
 sudo apt install -y libgtest-dev
 cd /usr/src/gtest
 sudo cmake .
 sudo make -j4
-sudo make install
+sudo ln -s *.a /usr/lib/.
 
 sudo apt update
 sudo apt upgrade -y
