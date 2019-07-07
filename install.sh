@@ -50,26 +50,6 @@ pip-sync $DOTFILES_DIR/requirements.txt
 # emacs vim
 sudo apt install -y emacs vim
 
-# atom（本体は事前にdebファイルからインストール）
-#apm install --packages-file $DOTFILES_DIR/apm_packages.txt
-
-# rtags build
-sudo apt install -y clang libclang-dev cmake
-git clone https://github.com/Andersbakken/rtags $HOME/rtags
-cd $HOME/rtags
-git submodule init
-git submodule update
-mkdir build && cd build
-cmake ..
-make -j4 && sudo make install
-
-# rtags setup
-git clone https://github.com/rizsotto/Bear $HOME/Bear
-cd $HOME/Bear
-mkdir build && cd build
-cmake ..
-make -j4 && sudo make install
-
 # golang
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
@@ -98,9 +78,6 @@ mv peco_linux_amd64/peco $GOPATH/bin/.
 chmod 755 dep-linux-amd64
 mv dep-linux-amd64 $GOPATH/bin/dep
 
-# crror
-git clone https://github.com/bearmini/crror.git ~/crror
-
 # Qt
 sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
 
@@ -108,8 +85,8 @@ sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
-sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld clipit fonts-inconsolata libappindicator-dev curl \
-    graphviz doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file
+sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev curl graphviz \
+    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file
 
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -

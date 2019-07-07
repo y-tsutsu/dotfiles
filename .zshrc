@@ -88,9 +88,6 @@ alias cls="clear"
 alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 alias rtags="rc -J ."
 
-# Rtags
-rdm --daemon
-
 # コマンド矯正
 function command_not_found_handler(){
     if [ -e /usr/bin/jp2a ];then
