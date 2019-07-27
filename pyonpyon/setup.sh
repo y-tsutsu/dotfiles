@@ -7,4 +7,4 @@ cd ./sl
 make -j2
 git checkout pyonpyon
 make -j2
-sudo ln -s $WORK/sl/pyonpyon /usr/games/sl
+sudo ln -s $WORK/sl/pyonpyon /usr/local/bin/sl

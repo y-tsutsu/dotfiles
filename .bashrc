@@ -155,6 +155,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # bash
 export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
 
+# .NET Core
+export PATH=$PATH:/usr/share/dotnet/
+
 # コマンド矯正
 function command_not_found_handle(){
     if [ -e /usr/bin/jp2a ];then

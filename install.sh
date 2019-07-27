@@ -131,12 +131,9 @@ sudo gpasswd -a $USER docker
 sudo systemctl restart docker
 
 # .NET Core
-# sudo apt install -y libunwind8 gettext
-# curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-# sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-# sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/dotnetdev.list'
-# sudo apt update
-# sudo apt install -y dotnet-sdk-2.1.4
+wget -O /tmp/dotnet_runtime_2.2.3.tar.gz https://download.visualstudio.microsoft.com/download/pr/28271651-a8f6-41d6-9144-2d53f6c4aac4/bb29124818f370cd08c5c8cc8f8816bf/dotnet-runtime-2.2.3-linux-x64.tar.gz
+sudo mkdir /usr/share/dotnet/
+sudo tar zxf /tmp/dotnet_runtime_2.2.3.tar.gz -C /usr/share/dotnet/
 
 # HackGen
 cd /tmp/
