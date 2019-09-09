@@ -4,6 +4,7 @@
 pkglist=(
     alefragnani.Bookmarks
     bbenoist.QML
+    bungcip.better-toml
     donjayamanne.githistory
     eamodio.gitlens
     EditorConfig.EditorConfig

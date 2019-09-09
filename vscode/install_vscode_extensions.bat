@@ -1,5 +1,6 @@
 call code --install-extension alefragnani.Bookmarks
 call code --install-extension bbenoist.QML
+call code --install-extension bungcip.better-toml
 call code --install-extension donjayamanne.githistory
 call code --install-extension eamodio.gitlens
 call code --install-extension EditorConfig.EditorConfig
