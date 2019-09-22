@@ -103,6 +103,7 @@ sudo apt install -y code
 $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # GitKraken
+sudo apt install -y gvfs-bin
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i gitkraken-amd64.deb
 sudo apt install -y -f
