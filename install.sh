@@ -20,7 +20,7 @@ git config --global push.default simple
 git config --global core.precomposeunicode true
 git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
-git config --global merge.tool 'code --wait "$MERGED" '
+git config --global merge.tool 'code --wait "$MERGED"'
 git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
@@ -142,6 +142,12 @@ wget https://github.com/yuru7/HackGen/releases/download/v1.1.0/HackGen_v1.1.0.zi
 unzip HackGen_v1.1.0.zip
 sudo mkdir -p /usr/share/fonts/HackGen
 sudo mv ./HackGen*.ttf /usr/share/fonts/HackGen/.
+sudo fc-cache -fv
+
+# Cascadia Code
+cd /tmp/
+wget https://github.com/microsoft/cascadia-code/releases/download/v1909.16/Cascadia.ttf
+sudo mv ./Cascadia.ttf /home/tsutsu/.local/share/fonts/.
 sudo fc-cache -fv
 
 # Google Test
