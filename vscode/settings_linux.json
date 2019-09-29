@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Cascadia Code', HackGen35, 'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'", 
+    "editor.fontFamily": "'Cascadia Code', HackGen, 'Courier New', Inconsolata, 'Droid Sans Mono', monospace, IPAGothic, 'Droid Sans Fallback'", 
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
