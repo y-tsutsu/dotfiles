@@ -132,9 +132,17 @@ sudo gpasswd -a $USER docker
 sudo systemctl restart docker
 
 # .NET Core
-wget -O /tmp/dotnet_runtime_2.2.3.tar.gz https://download.visualstudio.microsoft.com/download/pr/28271651-a8f6-41d6-9144-2d53f6c4aac4/bb29124818f370cd08c5c8cc8f8816bf/dotnet-runtime-2.2.3-linux-x64.tar.gz
-sudo mkdir /usr/share/dotnet/
-sudo tar zxf /tmp/dotnet_runtime_2.2.3.tar.gz -C /usr/share/dotnet/
+cd /tmp/
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
+sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
+wget -q https://packages.microsoft.com/config/debian/10/prod.list
+sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
+sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt update
+sudo apt install -y dotnet-sdk-3.0
 
 # HackGen
 cd /tmp/
