@@ -148,14 +148,15 @@ sudo apt install -y dotnet-sdk-3.0
 cd /tmp/
 wget https://github.com/yuru7/HackGen/releases/download/v1.1.0/HackGen_v1.1.0.zip
 unzip HackGen_v1.1.0.zip
-sudo mkdir -p /usr/share/fonts/HackGen
-sudo mv ./HackGen*.ttf /usr/share/fonts/HackGen/.
+mkdir -p /home/tsutsu/.local/share/fonts/HackGen
+mv ./HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
 sudo fc-cache -fv
 
 # Cascadia Code
 cd /tmp/
 wget https://github.com/microsoft/cascadia-code/releases/download/v1909.16/Cascadia.ttf
-sudo mv ./Cascadia.ttf /home/tsutsu/.local/share/fonts/.
+mkdir -p /home/tsutsu/.local/share/fonts
+mv ./Cascadia.ttf /home/tsutsu/.local/share/fonts/.
 sudo fc-cache -fv
 
 # Google Test
