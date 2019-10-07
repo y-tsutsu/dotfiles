@@ -88,6 +88,9 @@ alias cls="clear"
 alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 alias rtags="rc -J ."
 
+# mkdir + cd
+function mkcd() { mkdir -p $1 && cd $1 }
+
 # コマンド矯正
 function command_not_found_handler(){
     if [ -e /usr/bin/jp2a ];then
@@ -100,21 +103,25 @@ function command_not_found_handler(){
 
 #compdef pipenv
 _pipenv() {
-  eval $(env COMMANDLINE="${words[1,$CURRENT]}" _PIPENV_COMPLETE=complete-zsh  pipenv)
+    eval $(env COMMANDLINE="${words[1,$CURRENT]}" _PIPENV_COMPLETE=complete-zsh  pipenv)
 }
 if [[ "$(basename ${(%):-%x})" != "_pipenv" ]]; then
-  autoload -U compinit && compinit
-  compdef _pipenv pipenv
+    autoload -U compinit && compinit
+    compdef _pipenv pipenv
 fi
 
 # peco + ghq
 bindkey '^]' peco-src
 function peco-src() {
-  local src=$(ghq list --full-path | peco --query "$LBUFFER")
-  if [ -n "$src" ]; then
-    BUFFER="cd ${src}"
-    zle accept-line
-  fi
-  zle -R -c
+    local src=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$src" ]; then
+        BUFFER="cd ${src}"
+        zle accept-line
+    fi
+    zle -R -c
 }
 zle -N peco-src
+
+# zaw.zsh(history utility)
+source ~/zaw/zaw.zsh
+bindkey '^h' zaw-history

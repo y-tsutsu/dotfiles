@@ -161,10 +161,14 @@ sudo fc-cache -fv
 
 # Google Test
 sudo apt install -y libgtest-dev
-cd /usr/src/gtest
+cd /usr/src/gtest/
 sudo cmake .
 sudo make -j4
 sudo ln -s *.a /usr/lib/.
+
+# zaw.zsh(history utility)
+cd $HOME
+git clone git://github.com/zsh-users/zaw.git
 
 sudo apt update
 sudo apt upgrade -y
