@@ -11,6 +11,7 @@ pkglist=(
     formulahendry.code-runner
     ionutvmi.path-autocomplete
     jebbs.plantuml
+    Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
     michelemelluso.code-beautifier
     MS-CEINTL.vscode-language-pack-ja

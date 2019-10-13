@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Cascadia Code', 'HackGen', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Cascadia Code', HackGen, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
@@ -29,6 +29,5 @@
     "glassit.alpha": 230,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false,
-    "remote.SSH.showLoginTerminal": true
+    "python.terminal.activateEnvironment": false
 }

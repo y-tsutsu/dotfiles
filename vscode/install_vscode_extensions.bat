@@ -7,6 +7,7 @@ call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
 call code --install-extension ionutvmi.path-autocomplete
 call code --install-extension jebbs.plantuml
+call code --install-extension Kelvin.vscode-sshfs
 call code --install-extension mechatroner.rainbow-csv
 call code --install-extension michelemelluso.code-beautifier
 call code --install-extension MS-CEINTL.vscode-language-pack-ja
