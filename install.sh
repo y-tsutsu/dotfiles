@@ -55,8 +55,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.11.4
-goenv global 1.11.4
+goenv install 1.13.1
+goenv global 1.13.1
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -68,11 +68,11 @@ go get -u github.com/k0kubun/pp
 go get -u golang.org/x/tools/cmd/godoc
 go get -u github.com/jessevdk/go-assets-builder
 cd /tmp/
-wget https://github.com/motemen/ghq/releases/download/v0.8.0/ghq_linux_amd64.zip
+wget https://github.com/motemen/ghq/releases/download/v0.12.6/ghq_linux_amd64.zip
 wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
-wget https://github.com/golang/dep/releases/download/v0.5.0/dep-linux-amd64
+wget https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-amd64
 unzip ghq_linux_amd64.zip
-mv ghq $GOPATH/bin/.
+mv ghq_linux_amd64/ghq $GOPATH/bin/.
 tar -axvf peco_linux_amd64.tar.gz
 mv peco_linux_amd64/peco $GOPATH/bin/.
 chmod 755 dep-linux-amd64
