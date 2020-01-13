@@ -10,6 +10,7 @@ call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs
 call code --install-extension mechatroner.rainbow-csv
 call code --install-extension michelemelluso.code-beautifier
+call code --install-extension ms-azuretools.vscode-docker
 call code --install-extension MS-CEINTL.vscode-language-pack-ja
 call code --install-extension ms-python.python
 call code --install-extension ms-vscode.cpptools
