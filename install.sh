@@ -111,7 +111,7 @@ sudo apt install -y -f
 rm gitkraken-amd64.deb
 
 # Vivaldi
-VIVALDI_DEB=vivaldi-stable_1.14.1077.45-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_2.10.1745.27-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
