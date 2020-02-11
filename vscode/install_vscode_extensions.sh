@@ -14,6 +14,7 @@ pkglist=(
     Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
     michelemelluso.code-beautifier
+    ms-azuretools.vscode-docker
     MS-CEINTL.vscode-language-pack-ja
     ms-python.python
     ms-vscode.cpptools
@@ -21,7 +22,6 @@ pkglist=(
     ms-vscode.Go
     ms-vscode-remote.vscode-remote-extensionpack
     octref.vetur
-    PeterJausovec.vscode-docker
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     teabyii.ayu
