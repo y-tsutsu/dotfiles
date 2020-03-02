@@ -171,5 +171,9 @@ sudo ln -s *.a /usr/lib/.
 cd $HOME
 git clone git://github.com/zsh-users/zaw.git
 
+# VMware share
+sudo mkdir /mnt/hgfs
+echo '.host:/ /mnt/hgfs fuse.vmhgfs-fuse allow_other 0 0' | sudo tee -a /etc/fstab
+
 sudo apt update
 sudo apt upgrade -y
