@@ -16,9 +16,9 @@ pkglist=(
     michelemelluso.code-beautifier
     ms-azuretools.vscode-docker
     MS-CEINTL.vscode-language-pack-ja
+    ms-dotnettools.csharp
     ms-python.python
     ms-vscode.cpptools
-    ms-vscode.csharp
     ms-vscode.Go
     ms-vscode-remote.vscode-remote-extensionpack
     octref.vetur
