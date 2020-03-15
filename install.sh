@@ -48,7 +48,7 @@ pip-compile $DOTFILES_DIR/requirements.in
 pip-sync $DOTFILES_DIR/requirements.txt
 
 # emacs vim
-sudo apt install -y emacs vim
+sudo apt install -y vim emacs texinfo
 
 # golang
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
