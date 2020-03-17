@@ -5,7 +5,6 @@ pkglist=(
     alefragnani.Bookmarks
     bbenoist.QML
     bungcip.better-toml
-    donjayamanne.githistory
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
@@ -13,6 +12,7 @@ pkglist=(
     jebbs.plantuml
     Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
+    mhutchie.git-graph
     michelemelluso.code-beautifier
     ms-azuretools.vscode-docker
     MS-CEINTL.vscode-language-pack-ja

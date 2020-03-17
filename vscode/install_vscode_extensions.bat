@@ -1,7 +1,6 @@
 call code --install-extension alefragnani.Bookmarks
 call code --install-extension bbenoist.QML
 call code --install-extension bungcip.better-toml
-call code --install-extension donjayamanne.githistory
 call code --install-extension eamodio.gitlens
 call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
@@ -9,6 +8,7 @@ call code --install-extension ionutvmi.path-autocomplete
 call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs
 call code --install-extension mechatroner.rainbow-csv
+call code --install-extension mhutchie.git-graph
 call code --install-extension michelemelluso.code-beautifier
 call code --install-extension ms-azuretools.vscode-docker
 call code --install-extension MS-CEINTL.vscode-language-pack-ja
