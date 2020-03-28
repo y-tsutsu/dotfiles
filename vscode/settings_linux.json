@@ -1,4 +1,5 @@
 {
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.fontFamily": "'Cascadia Code', HackGen, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'", 
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
