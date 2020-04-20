@@ -27,5 +27,6 @@
     "gitlens.currentLine.enabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "python.workspaceSymbols.enabled": true
 }
