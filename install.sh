@@ -33,6 +33,11 @@ fi
 # terminator zsh tmux
 sudo apt install -y terminator zsh tmux xsel
 
+# Tmux Plugin Manager
+if [ ! -e $HOME/.tmux/plugins/tpm ]; then
+    git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+fi
+
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev
 git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
