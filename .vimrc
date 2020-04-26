@@ -16,7 +16,7 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 syntax enable
-colorscheme koehler
+colorscheme tender
 set background=dark
 
 set list listchars=tab:\▸\-
