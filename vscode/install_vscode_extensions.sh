@@ -5,6 +5,7 @@ pkglist=(
     alefragnani.Bookmarks
     bbenoist.QML
     bungcip.better-toml
+    codezombiech.gitignore
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
