@@ -5,11 +5,11 @@ pkglist=(
     alefragnani.Bookmarks
     bbenoist.QML
     bungcip.better-toml
+    christian-kohler.path-intellisense
     codezombiech.gitignore
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
-    ionutvmi.path-autocomplete
     jebbs.plantuml
     Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
