@@ -92,7 +92,7 @@ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # etc.
 sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator-dev curl graphviz clang libclang-dev cmake \
-    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5
+    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
 
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
