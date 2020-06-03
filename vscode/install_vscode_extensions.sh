@@ -19,6 +19,7 @@ pkglist=(
     MS-CEINTL.vscode-language-pack-ja
     ms-dotnettools.csharp
     ms-python.python
+    ms-vscode.cmake-tools
     ms-vscode.cpptools
     ms-vscode.Go
     ms-vscode-remote.vscode-remote-extensionpack
