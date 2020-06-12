@@ -10,6 +10,7 @@ pkglist=(
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
+    golang.Go
     jebbs.plantuml
     Kelvin.vscode-sshfs
     mechatroner.rainbow-csv
@@ -21,7 +22,6 @@ pkglist=(
     ms-python.python
     ms-vscode.cmake-tools
     ms-vscode.cpptools
-    ms-vscode.Go
     ms-vscode-remote.vscode-remote-extensionpack
     octref.vetur
     shakram02.bash-beautify
