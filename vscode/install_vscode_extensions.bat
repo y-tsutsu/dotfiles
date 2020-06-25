@@ -25,5 +25,4 @@ call code --install-extension s-nlf-fh.glassit
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter
 call code --install-extension teabyii.ayu
-call code --install-extension twxs.cmake
 call code --install-extension wmaurer.vscode-jumpy

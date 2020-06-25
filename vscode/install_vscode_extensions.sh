@@ -27,7 +27,6 @@ pkglist=(
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     teabyii.ayu
-    twxs.cmake
     wmaurer.vscode-jumpy
 )
 
