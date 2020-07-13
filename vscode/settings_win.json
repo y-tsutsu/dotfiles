@@ -18,10 +18,10 @@
     "workbench.settings.useSplitJSON": true,
     "cmake.configureOnOpen": false,
     "code-runner.executorMap": {
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt.exe",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt.exe",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm $fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt && rm $fileNameWithoutExt",
         "csharp": "cd $dir && dotnet run --configuration Release",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $dir$fileNameWithoutExt"
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $fileNameWithoutExt"
     },
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
