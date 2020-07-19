@@ -7,6 +7,8 @@ export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
 # pipenv
+autoload -Uz compinit
+compinit
 eval "$(pipenv --completion)"
 
 # goenv
