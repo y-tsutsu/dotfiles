@@ -6,9 +6,10 @@ call code --install-extension codezombiech.gitignore
 call code --install-extension eamodio.gitlens
 call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
-call code --install-extension golang.Go
+call code --install-extension golang.go
 call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs
+call code --install-extension marp-team.marp-vscode
 call code --install-extension mechatroner.rainbow-csv
 call code --install-extension mhutchie.git-graph
 call code --install-extension michelemelluso.code-beautifier
@@ -16,9 +17,9 @@ call code --install-extension ms-azuretools.vscode-docker
 call code --install-extension MS-CEINTL.vscode-language-pack-ja
 call code --install-extension ms-dotnettools.csharp
 call code --install-extension ms-python.python
+call code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 call code --install-extension ms-vscode.cmake-tools
 call code --install-extension ms-vscode.cpptools
-call code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 call code --install-extension octref.vetur
 call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension s-nlf-fh.glassit

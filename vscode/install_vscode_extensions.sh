@@ -10,9 +10,10 @@ pkglist=(
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
-    golang.Go
+    golang.go
     jebbs.plantuml
     Kelvin.vscode-sshfs
+    marp-team.marp-vscode
     mechatroner.rainbow-csv
     mhutchie.git-graph
     michelemelluso.code-beautifier
@@ -20,9 +21,9 @@ pkglist=(
     MS-CEINTL.vscode-language-pack-ja
     ms-dotnettools.csharp
     ms-python.python
+    ms-vscode-remote.vscode-remote-extensionpack
     ms-vscode.cmake-tools
     ms-vscode.cpptools
-    ms-vscode-remote.vscode-remote-extensionpack
     octref.vetur
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
