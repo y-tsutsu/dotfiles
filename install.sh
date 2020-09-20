@@ -4,23 +4,20 @@ DOTFILES_DIR=`pwd`
 cd $HOME
 
 # build-essential
-#sudo apt install -y build-essential
+# sudo apt install -y build-essential
 
 # open-vm-tools
-#sudo apt install -y open-vm-tools open-vm-tools-desktop
+# sudo apt install -y open-vm-tools open-vm-tools-desktop
 
 # git subversion（git本体は事前にインストール）
+# sudo apt install -y git
 git config --global user.name 'tsutsu'
 git config --global user.email 'tsutsu@example.com'
 git config --global core.editor 'code --wait'
-git config --global color.diff auto
-git config --global color.status auto
-git config --global color.branch auto
+git config --global merge.tool 'code --wait "$MERGED"'
 git config --global push.default simple
-git config --global core.precomposeunicode true
 git config --global core.quotepath false
 git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
-git config --global merge.tool 'code --wait "$MERGED"'
 git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
@@ -44,9 +41,9 @@ git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-pyenv install 3.8.3
+pyenv install 3.8.5
 pyenv install 2.7.18
-pyenv global 3.8.3
+pyenv global 3.8.5
 python --version
 pip install --upgrade pip
 pip install pip-tools
@@ -61,8 +58,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.14.3
-goenv global 1.14.3
+goenv install 1.15.2
+goenv global 1.15.2
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -108,13 +105,6 @@ sudo apt install -y apt-transport-https
 sudo apt update
 sudo apt install -y code
 $DOTFILES_DIR/vscode/install_vscode_extensions.sh
-
-# GitKraken
-sudo apt install -y gvfs-bin
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo dpkg -i gitkraken-amd64.deb
-sudo apt install -y -f
-rm gitkraken-amd64.deb
 
 # Vivaldi
 VIVALDI_DEB=vivaldi-stable_2.10.1745.27-1_amd64.deb
