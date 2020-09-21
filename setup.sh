@@ -14,4 +14,13 @@ do
     fi
 done
 
-ln -s $DOTFILES_DIR/.flake8 $HOME/.config/flake8
+CONFIG_DIR=$DOTFILES_DIR/.config
+CONFIG_FILES=( flake8 pep8 terminator )
+for file in ${CONFIG_FILES[@]}
+do
+    if [ -d $CONFIG_DIR/$file ]; then
+        ln -s $CONFIG_DIR/$file $HOME/.config
+    else
+        ln -s $CONFIG_DIR/$file $HOME/.config/$file
+    fi
+done
