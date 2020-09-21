@@ -25,6 +25,7 @@ pkglist=(
     ms-vscode.cmake-tools
     ms-vscode.cpptools
     octref.vetur
+    s-nlf-fh.glassit
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     teabyii.ayu
