@@ -96,8 +96,11 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt update
 sudo apt install -y nodejs
 
+# Rust
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+
 # Visual Studio Code
-cd $HOME
+cd /tmp/
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -107,13 +110,14 @@ sudo apt install -y code
 $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
+cd /tmp/
 VIVALDI_DEB=vivaldi-stable_2.10.1745.27-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
-rm $VIVALDI_DEB
 
 # Docker
+cd /tmp/
 sudo apt remove docker docker-engine docker.io
 sudo apt install -y apt-transport-https ca-certificates gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
