@@ -92,7 +92,7 @@ sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inco
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # node(npm)
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt update
 sudo apt install -y nodejs
 
