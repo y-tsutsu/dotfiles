@@ -12,7 +12,7 @@ cd $HOME
 # git subversion（git本体は事前にインストール）
 # sudo apt install -y git
 git config --global user.name 'tsutsu'
-git config --global user.email 'tsutsu@example.com'
+git config --global user.email 'tsutsu0928@gmail.com'
 git config --global core.editor 'code --wait'
 git config --global merge.tool 'code --wait "$MERGED"'
 git config --global push.default simple
