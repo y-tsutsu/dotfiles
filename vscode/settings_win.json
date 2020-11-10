@@ -8,7 +8,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.shell.windows": "cmd.exe",
     "terminal.integrated.env.windows": {
-        "CMDER_ROOT": "C:\\cmder"
+        "CMDER_ROOT": "${env:HOMEPATH}\\cmder"
     },
     "terminal.integrated.shellArgs.windows": [
         "/K",
