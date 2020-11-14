@@ -41,7 +41,7 @@ if [ ! -e $HOME/.tmux/plugins/tpm ]; then
 fi
 
 # etc.
-sudo apt install -y ruby tig gdb valgrind strace curl clang libclang-dev cmake locate rpm exuberant-ctags sshfs apt-file xclip
+sudo apt install -y ruby tig gdb valgrind strace curl clang libclang-dev cmake locate rpm exuberant-ctags sshfs jp2a apt-file xclip
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
