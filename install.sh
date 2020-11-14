@@ -21,19 +21,29 @@ git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(r
 git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
+# terminator zsh tmux
+sudo apt install -y terminator zsh tmux xsel
+
 # oh-my-zsh
 if [ ! -e $HOME/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
-# terminator zsh tmux
-sudo apt install -y terminator zsh tmux xsel
+# zaw.zsh(history utility)
+git clone git://github.com/zsh-users/zaw.git $HOME/zaw
 
 # Tmux Plugin Manager
 if [ ! -e $HOME/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 fi
+
+# emacs vim
+sudo apt install -y vim emacs texinfo
+
+# etc.
+sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator3-1 curl graphviz clang libclang-dev cmake \
+    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
@@ -49,9 +59,6 @@ pip install --upgrade pip
 pip install pip-tools
 pip-compile $DOTFILES_DIR/requirements.in
 pip-sync $DOTFILES_DIR/requirements.txt
-
-# emacs vim
-sudo apt install -y vim emacs texinfo
 
 # golang
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
@@ -81,16 +88,6 @@ mv peco_linux_amd64/peco $GOPATH/bin/.
 chmod 755 dep-linux-amd64
 mv dep-linux-amd64 $GOPATH/bin/dep
 
-# Qt
-sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
-
-# etc.
-sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator3-1 curl graphviz clang libclang-dev cmake \
-    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
-
-# Heroku
-curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-
 # node(npm)
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt update
@@ -98,6 +95,25 @@ sudo apt install -y nodejs
 
 # Rust
 curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+# Qt
+sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
+
+# Heroku
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
+# .NET Core
+cd /tmp/
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
+sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
+wget -q https://packages.microsoft.com/config/debian/10/prod.list
+sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
+sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
+sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt update
+sudo apt install -y dotnet-sdk-3.1
 
 # Visual Studio Code
 cd /tmp/
@@ -135,19 +151,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-# .NET Core
-cd /tmp/
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget -q https://packages.microsoft.com/config/debian/10/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt update
-sudo apt install -y apt-transport-https
-sudo apt update
-sudo apt install -y dotnet-sdk-3.1
-
 # HackGen
 cd /tmp/
 wget https://github.com/yuru7/HackGen/releases/download/v1.1.0/HackGen_v1.1.0.zip
@@ -169,10 +172,6 @@ cd /usr/src/gtest/
 sudo cmake .
 sudo make -j4
 sudo ln -s *.a /usr/lib/.
-
-# zaw.zsh(history utility)
-cd $HOME
-git clone git://github.com/zsh-users/zaw.git
 
 # VMware share
 sudo mkdir /mnt/hgfs
