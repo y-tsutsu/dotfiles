@@ -3,16 +3,20 @@
 DOTFILES_DIR=`pwd`
 cd $HOME
 
+mkdir $HOME/.config
+
+# 日本語化
 sudo sed -i.bak -e "s/http:\/\/archive\.ubuntu\.com/http:\/\/jp\.archive\.ubuntu\.com/g" /etc/apt/sources.list
 sudo apt update && sudo apt upgrade -y
-
 sudo apt install -y language-pack-ja
 sudo update-locale LANG=ja_JP.UTF8
 sudo dpkg-reconfigure tzdata
 sudo apt install -y manpages-ja manpages-ja-dev
 
+# build-essential
 sudo apt install -y build-essential
 
+# git
 sudo apt install -y git
 git config --global user.name 'tsutsu'
 git config --global user.email 'tsutsu0928@gmail.com'
