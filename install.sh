@@ -153,17 +153,18 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # HackGen
 cd /tmp/
-wget https://github.com/yuru7/HackGen/releases/download/v1.1.0/HackGen_v1.1.0.zip
-unzip HackGen_v1.1.0.zip
+wget https://github.com/yuru7/HackGen/releases/download/v2.2.1/HackGen_v2.2.1.zip
+unzip HackGen_v2.2.1.zip
 mkdir -p /home/tsutsu/.local/share/fonts/HackGen
-mv ./HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
+mv ./HackGen_v2.2.1/HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
 sudo fc-cache -fv
 
 # Cascadia Code
 cd /tmp/
-wget https://github.com/microsoft/cascadia-code/releases/download/v1909.16/Cascadia.ttf
-mkdir -p /home/tsutsu/.local/share/fonts
-mv ./Cascadia.ttf /home/tsutsu/.local/share/fonts/.
+wget https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip
+unzip CascadiaCode-2009.22.zip
+mkdir -p /home/tsutsu/.local/share/fonts/cascadia
+mv ./ttf/Cascadia*.ttf /home/tsutsu/.local/share/fonts/cascadia/.
 sudo fc-cache -fv
 
 # Google Test
