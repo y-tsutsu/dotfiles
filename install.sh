@@ -78,8 +78,8 @@ go get -u github.com/k0kubun/pp
 go get -u golang.org/x/tools/cmd/godoc
 go get -u github.com/jessevdk/go-assets-builder
 cd /tmp/
-wget https://github.com/motemen/ghq/releases/download/v0.12.6/ghq_linux_amd64.zip
-wget https://github.com/peco/peco/releases/download/v0.5.3/peco_linux_amd64.tar.gz
+wget https://github.com/x-motemen/ghq/releases/download/v1.1.5/ghq_linux_amd64.zip
+wget https://github.com/peco/peco/releases/download/v0.5.8/peco_linux_amd64.tar.gz
 wget https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-amd64
 unzip ghq_linux_amd64.zip
 mv ghq_linux_amd64/ghq $GOPATH/bin/.
