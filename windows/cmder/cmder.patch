@@ -1,0 +1,24 @@
+diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
+index 4221684..4044a18 100644
+--- a/config/user_aliases.cmd
++++ b/config/user_aliases.cmd
+@@ -13,3 +13,6 @@ history=cat -n "%CMDER_ROOT%\config\.history"
+ unalias=alias /d $1
+ vi=vim $*
+ cmderr=cd /d "%CMDER_ROOT%"
++cd~=cd %HOMEPATH%
++pecog=peco-tool.bat ghq
++pecoh=peco-tool.bat history
+diff --git a/vendor/clink.lua b/vendor/clink.lua
+index 8d72186..8f2e36c 100644
+--- a/vendor/clink.lua
++++ b/vendor/clink.lua
+@@ -48,7 +48,7 @@ local function set_prompt_filter()
+     -- orig: $E[1;32;40m$P$S{git}{hg}$S$_$E[1;30;40m{lamb}$S$E[0m
+     -- color codes: "\x1b[1;37;40m"
+     local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg}{svn} \n\x1b[1;39;40m{lamb} \x1b[0m"
+-    local lambda = "λ"
++    local lambda = "$"
+     cmder_prompt = string.gsub(cmder_prompt, "{cwd}", verbatim(cwd))
+ 
+     if env ~= nil then
