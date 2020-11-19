@@ -5,8 +5,15 @@ if "%1" equ "ghq" (
 )
 
 if "%1" equ "history" (
-  goto history
+  if "%2" equ "" (
+    goto history
+  )
+  if "%2" equ "clip" (
+    goto historyclip
+  )
 )
+
+goto end
 
 :ghq
 for /f "tokens=*" %%x in ('ghq list -p ^| peco') do (
@@ -18,6 +25,13 @@ goto end
 :history
 for /f "tokens=*" %%x in ('tac %CMDER_ROOT%/config/.history ^| peco') do (
   %%x
+  break
+)
+goto end
+
+:historyclip
+for /f "tokens=*" %%x in ('tac %CMDER_ROOT%/config/.history ^| peco') do (
+  set /P ="%%x"< nul | clip
   break
 )
 goto end
