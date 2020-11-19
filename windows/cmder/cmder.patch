@@ -7,6 +7,7 @@ index 4221684..4044a18 100644
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
 +cd~=cd %HOMEPATH%
++rmtemp=rm -rf %TEMP%/*
 +pecog=peco-tool.bat ghq
 +pecoh=peco-tool.bat history
 diff --git a/vendor/clink.lua b/vendor/clink.lua
