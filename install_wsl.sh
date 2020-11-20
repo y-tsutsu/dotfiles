@@ -6,12 +6,12 @@ cd $HOME
 mkdir $HOME/.config
 
 # 日本語化
-sudo sed -i.bak -e "s/http:\/\/archive\.ubuntu\.com/http:\/\/jp\.archive\.ubuntu\.com/g" /etc/apt/sources.list
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y language-pack-ja
-sudo update-locale LANG=ja_JP.UTF8
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y task-japanese
+sudo dpkg-reconfigure locales
 sudo dpkg-reconfigure tzdata
-sudo apt install -y manpages-ja manpages-ja-dev
+sudo apt install -y man
 
 # build-essential
 sudo apt install -y build-essential
@@ -45,7 +45,7 @@ if [ ! -e $HOME/.tmux/plugins/tpm ]; then
 fi
 
 # etc.
-sudo apt install -y ruby tig gdb valgrind strace curl clang libclang-dev cmake locate rpm exuberant-ctags sshfs jp2a apt-file xclip
+sudo apt install -y vim ruby tig gdb valgrind strace curl clang libclang-dev cmake locate rpm exuberant-ctags sshfs jp2a apt-file xclip
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
@@ -66,8 +66,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.15.2
-goenv global 1.15.2
+goenv install 1.15.3
+goenv global 1.15.3
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -99,12 +99,31 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # .NET Core
 cd /tmp/
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install -y dotnet-sdk-3.1
+sudo apt install -y dotnet-sdk-5.0
+
+# Docker
+cd /tmp/
+sudo apt remove docker docker-engine docker.io containerd runc
+sudo apt install -y apt-transport-https ca-certificates gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+    "deb [arch=amd64] https://download.docker.com/linux/debian \
+    $(lsb_release -cs) \
+    stable"
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo systemctl restart docker
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # Google Test
 sudo apt install -y libgtest-dev

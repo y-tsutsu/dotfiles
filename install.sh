@@ -65,8 +65,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.15.2
-goenv global 1.15.2
+goenv install 1.15.3
+goenv global 1.15.3
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -104,16 +104,12 @@ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # .NET Core
 cd /tmp/
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget -q https://packages.microsoft.com/config/debian/10/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
+wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install -y dotnet-sdk-3.1
+sudo apt install -y dotnet-sdk-5.0
 
 # Visual Studio Code
 cd /tmp/
@@ -134,16 +130,16 @@ sudo apt install -y -f
 
 # Docker
 cd /tmp/
-sudo apt remove docker docker-engine docker.io
-sudo apt install -y apt-transport-https ca-certificates gnupg2 software-properties-common
-curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
+sudo apt remove docker docker-engine docker.io containerd runc
+sudo apt install -y apt-transport-https ca-certificates gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository \
-    "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo "$ID") \
+    "deb [arch=amd64] https://download.docker.com/linux/debian \
     $(lsb_release -cs) \
     stable"
 sudo apt update
-sudo apt install -y docker-ce
+sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 sudo systemctl restart docker
