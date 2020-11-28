@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm $HOME/.bashrc
+rm $HOME/.zshenv
 
 DOTFILES_DIR=`pwd`
 DOT_FILES=( .emacs.d .vim .bashrc .tmux.conf .zshenv .zshrc .vimrc .tigrc serval.jpg )
