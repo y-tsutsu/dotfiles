@@ -72,7 +72,7 @@ mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/dev
 export PATH=$GOPATH/bin:$PATH
-go get -u github.com/motemen/gore
+env GO111MODULE=on go get -u github.com/motemen/gore/cmd/gore
 go get -u github.com/nsf/gocode
 go get -u github.com/k0kubun/pp
 go get -u golang.org/x/tools/cmd/godoc
