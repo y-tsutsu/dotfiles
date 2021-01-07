@@ -10,6 +10,12 @@
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
     "workbench.iconTheme": "ayu",
     "workbench.settings.useSplitJSON": true,
     "cmake.configureOnOpen": false,
