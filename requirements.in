@@ -6,7 +6,7 @@ numpy
 opencv-python
 pipenv
 pyperclip
-pyqt5
+pyside2
 rope
 scipy
 seaborn
