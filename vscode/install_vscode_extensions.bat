@@ -1,5 +1,4 @@
 call code --install-extension alefragnani.Bookmarks
-call code --install-extension bbenoist.QML
 call code --install-extension bungcip.better-toml
 call code --install-extension christian-kohler.path-intellisense
 call code --install-extension codezombiech.gitignore
@@ -23,6 +22,7 @@ call code --install-extension ms-vscode.cpptools
 call code --install-extension octref.vetur
 call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension s-nlf-fh.glassit
+call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter
 call code --install-extension teabyii.ayu

@@ -3,7 +3,6 @@
 # Visual Studio Code :: Package list
 pkglist=(
     alefragnani.Bookmarks
-    bbenoist.QML
     bungcip.better-toml
     christian-kohler.path-intellisense
     codezombiech.gitignore
@@ -26,6 +25,7 @@ pkglist=(
     ms-vscode.cpptools
     octref.vetur
     s-nlf-fh.glassit
+    seanwu.vscode-qt-for-python
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     teabyii.ayu
