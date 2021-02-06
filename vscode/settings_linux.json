@@ -26,9 +26,6 @@
         "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $fileNameWithoutExt"
     },
     "git-graph.openNewTabEditorGroup": "Beside",
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
