@@ -9,6 +9,7 @@ pkglist=(
     eamodio.gitlens
     EditorConfig.EditorConfig
     formulahendry.code-runner
+    funkyremi.vscode-google-translate
     golang.go
     jebbs.plantuml
     Kelvin.vscode-sshfs

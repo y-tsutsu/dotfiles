@@ -34,5 +34,6 @@
     "python.languageServer": "Pylance",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "vscodeGoogleTranslate.preferredLanguage": "Japanese"
 }

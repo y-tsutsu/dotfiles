@@ -5,6 +5,7 @@ call code --install-extension codezombiech.gitignore
 call code --install-extension eamodio.gitlens
 call code --install-extension EditorConfig.EditorConfig
 call code --install-extension formulahendry.code-runner
+call code --install-extension funkyremi.vscode-google-translate
 call code --install-extension golang.go
 call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs
@@ -21,7 +22,6 @@ call code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 call code --install-extension ms-vscode.cmake-tools
 call code --install-extension ms-vscode.cpptools
 call code --install-extension octref.vetur
-call code --install-extension pmiossec.vscode-gitextensions
 call code --install-extension s-nlf-fh.glassit
 call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
