@@ -10,6 +10,7 @@
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
+    "workbench.editorAssociations": [],
     "workbench.iconTheme": "ayu",
     "workbench.settings.useSplitJSON": true,
     "cmake.configureOnOpen": false,
