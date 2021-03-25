@@ -7,7 +7,7 @@ index 4221684..cdfd241 100644
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
 +cd~=cd %HOMEPATH%
-+rmtemp=rm -rf %TEMP%/*
++rmtmp=rm -rf %TEMP%/*
 +pecog=peco-tool.bat ghq
 +pecoh=peco-tool.bat history
 +pecohc=peco-tool.bat history clip

@@ -119,6 +119,7 @@ alias cls="clear"
 alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 alias rtags="rc -J ."
 alias clip="xclip -selection c"
+alias rmtmp="rm -rf /tmp/*"
 
 # LANG for Visual Studio Code
 export LANG=ja_JP.UTF-8
