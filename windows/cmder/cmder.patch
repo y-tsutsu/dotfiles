@@ -1,8 +1,8 @@
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
-index 4221684..cdfd241 100644
+index 45f44a7..d68d937 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
-@@ -13,3 +13,8 @@ history=cat -n "%CMDER_ROOT%\config\.history"
+@@ -12,3 +12,8 @@ clear=cls
  unalias=alias /d $1
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
@@ -12,7 +12,7 @@ index 4221684..cdfd241 100644
 +pecoh=peco-tool.bat history
 +pecohc=peco-tool.bat history clip
 diff --git a/vendor/clink.lua b/vendor/clink.lua
-index 8d72186..8f2e36c 100644
+index 4ba4dd6..da4f84d 100644
 --- a/vendor/clink.lua
 +++ b/vendor/clink.lua
 @@ -48,7 +48,7 @@ local function set_prompt_filter()
@@ -24,3 +24,12 @@ index 8d72186..8f2e36c 100644
      cmder_prompt = string.gsub(cmder_prompt, "{cwd}", verbatim(cwd))
  
      if env ~= nil then
+@@ -303,7 +303,7 @@ local function git_prompt_filter()
+     -- Colors for git status
+     local colors = {
+         clean = "\x1b[1;37;40m",
+-        dirty = "\x1b[33;3m",
++        dirty = "\x1b[33;40m",
+         conflict = "\x1b[31;1m"
+     }
+ 
