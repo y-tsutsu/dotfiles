@@ -47,13 +47,14 @@ sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inco
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
-git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
+git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+git clone https://github.com/pyenv/pyenv-update.git $HOME/.pyenv/plugins/pyenv-update
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
-pyenv install 3.9.1
+pyenv install 3.9.4
 pyenv install 2.7.18
-pyenv global 3.9.1
+pyenv global 3.9.4
 python --version
 pip install --upgrade pip
 pip install pip-tools
