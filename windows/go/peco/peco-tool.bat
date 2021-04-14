@@ -1,5 +1,7 @@
 @echo off
 
+set history=%CMDER_ROOT%/vendor/clink/clink history
+
 if "%1" equ "ghq" (
   goto ghq
 )
@@ -23,16 +25,20 @@ for /f "tokens=*" %%x in ('ghq list -p ^| peco') do (
 goto end
 
 :history
-for /f "tokens=*" %%x in ('tac %CMDER_ROOT%/config/clink_history ^| grep "^[^|]" ^| peco') do (
-  %%x
-  break
+for /f "tokens=*" %%x in ('call %history% ^| tac ^| peco') do (
+  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g"') do (
+    %%y
+    break
+  )
 )
 goto end
 
 :historyclip
-for /f "tokens=*" %%x in ('tac %CMDER_ROOT%/config/clink_history ^| grep "^[^|]" ^| peco') do (
-  set /P ="%%x"< nul | clip
-  break
+for /f "tokens=*" %%x in ('call %history% ^| tac ^| peco') do (
+  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g"') do (
+    set /P ="%%y"< nul | clip
+    break
+  )
 )
 goto end
 
