@@ -1,0 +1,28 @@
+[user]
+	name = tsutsu
+	email = tsutsu0928@gmail.com
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+	editor = code --wait
+[diff]
+	guitool = vscode
+[difftool "vscode"]
+	path = code
+	cmd = code --wait --diff \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = vscode
+[mergetool "vscode"]
+	path = code
+	cmd = code --wait \"$MERGED\"
+[push]
+	default = simple
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[alias]
+	mylog = log --graph --name-status --pretty=format:\"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset\"
+[ghq]
+	root = C:/Users/tsutsu/dev/src
