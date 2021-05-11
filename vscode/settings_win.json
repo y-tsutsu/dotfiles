@@ -6,14 +6,19 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.defaultProfile.windows": "cmder",
     "terminal.integrated.env.windows": {
         "CMDER_ROOT": "${env:HOMEPATH}\\cmder"
     },
-    "terminal.integrated.shellArgs.windows": [
-        "/K",
-        "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"
-    ],
+    "terminal.integrated.profiles.windows": {
+        "cmder": {
+            "path": "cmd.exe",
+            "args": [
+                "/K",
+                "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"
+            ]
+        }
+    },
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Ayu Mirage",
     "workbench.editor.revealIfOpen": true,
