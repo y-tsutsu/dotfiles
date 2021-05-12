@@ -37,7 +37,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
     "glassit.alpha": 230,
-    "python.languageServer": "Pylance",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.terminal.activateEnvironment": false,
