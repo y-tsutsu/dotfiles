@@ -51,12 +51,13 @@ git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 git clone https://github.com/pyenv/pyenv-update.git $HOME/.pyenv/plugins/pyenv-update
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.9.4
+pyenv install 3.9.5
 pyenv install 2.7.18
-pyenv global 3.9.4
+pyenv global 3.9.5
 python --version
-pip install --upgrade pip
+pip install --upgrade pip setuptools
 pip install pip-tools
 pip-compile $DOTFILES_DIR/requirements.in
 pip-sync $DOTFILES_DIR/requirements.txt
