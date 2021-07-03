@@ -55,8 +55,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.9.5
-pyenv global 3.9.5
+pyenv install 3.9.6
+pyenv global 3.9.6
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -68,8 +68,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.15.3
-goenv global 1.15.3
+goenv install 1.16.5
+goenv global 1.16.5
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
