@@ -4,10 +4,10 @@ set WORK=%~dp0
 cd /d %WORK%
 
 env GO111MODULE=on go get -u github.com/motemen/gore/cmd/gore
-go get -u github.com/nsf/gocode
-go get -u github.com/k0kubun/pp
-go get -u golang.org/x/tools/cmd/godoc
-go get -u github.com/jessevdk/go-assets-builder
+go install github.com/nsf/gocode@latest
+go install github.com/k0kubun/pp@latest
+go install golang.org/x/tools/cmd/godoc@latest
+go install github.com/jessevdk/go-assets-builder@latest
 
 mkdir temp
 cd temp

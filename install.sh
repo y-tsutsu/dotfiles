@@ -75,10 +75,10 @@ export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/dev
 export PATH=$GOPATH/bin:$PATH
 env GO111MODULE=on go get -u github.com/motemen/gore/cmd/gore
-go get -u github.com/nsf/gocode
-go get -u github.com/k0kubun/pp
-go get -u golang.org/x/tools/cmd/godoc
-go get -u github.com/jessevdk/go-assets-builder
+go install github.com/nsf/gocode@latest
+go install github.com/k0kubun/pp@latest
+go install golang.org/x/tools/cmd/godoc@latest
+go install github.com/jessevdk/go-assets-builder@latest
 cd /tmp/
 wget https://github.com/x-motemen/ghq/releases/download/v1.1.5/ghq_linux_amd64.zip
 wget https://github.com/peco/peco/releases/download/v0.5.8/peco_linux_amd64.tar.gz
