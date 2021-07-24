@@ -125,7 +125,7 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_3.8.2259.42-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_4.0.2312.41-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
@@ -151,16 +151,16 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # HackGen
 cd /tmp/
-wget https://github.com/yuru7/HackGen/releases/download/v2.2.1/HackGen_v2.2.1.zip
-unzip HackGen_v2.2.1.zip
+wget https://github.com/yuru7/HackGen/releases/download/v2.4.0/HackGen_v2.4.0.zip
+unzip HackGen_v2.4.0.zip
 mkdir -p /home/tsutsu/.local/share/fonts/HackGen
-mv ./HackGen_v2.2.1/HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
+mv ./HackGen_v2.4.0/HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
 sudo fc-cache -fv
 
 # Cascadia Code
 cd /tmp/
-wget https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip
-unzip CascadiaCode-2009.22.zip
+wget https://github.com/microsoft/cascadia-code/releases/download/v2106.17/CascadiaCode-2106.17.zip
+unzip CascadiaCode-2106.17.zip
 mkdir -p /home/tsutsu/.local/share/fonts/cascadia
 mv ./ttf/Cascadia*.ttf /home/tsutsu/.local/share/fonts/cascadia/.
 sudo fc-cache -fv
