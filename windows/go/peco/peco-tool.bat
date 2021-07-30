@@ -26,7 +26,7 @@ goto end
 
 :history
 for /f "tokens=*" %%x in ('call %history% ^| tac ^| peco') do (
-  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g"') do (
+  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g" ^| sed "s/\s*$//"') do (
     %%y
     break
   )
@@ -35,7 +35,7 @@ goto end
 
 :historyclip
 for /f "tokens=*" %%x in ('call %history% ^| tac ^| peco') do (
-  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g"') do (
+  for /f "tokens=*" %%y in ('echo %%x ^| sed -e "s/^ *[0-9]\+ \+\(.\+\)$/\1/g" ^| sed "s/\s*$//"') do (
     set /P ="%%y"< nul | clip
     break
   )
