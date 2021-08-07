@@ -6,6 +6,7 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Ayu Mirage",
