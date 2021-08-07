@@ -9,5 +9,10 @@
         "key": "Escape",
         "command": "extension.jumpy-exit",
         "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
+        "key": "ctrl+shift+g d",
+        "command": "git.openChange",
+        "when": "editorTextFocus"
     }
 ]
