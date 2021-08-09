@@ -1,3 +1,32 @@
+diff --git a/config/cmder_prompt_config.lua b/config/cmder_prompt_config.lua
+index 6847f25..88ed727 100644
+--- a/config/cmder_prompt_config.lua
++++ b/config/cmder_prompt_config.lua
+@@ -19,7 +19,7 @@ prompt_homeSymbol = "~"
+ 
+ -- REQUIRED. Symbol displayed in the new line below the prompt.
+  -- default is 'λ'
+-prompt_lambSymbol = "λ"
++prompt_lambSymbol = "$"
+ 
+ -- REQUIRED. Adds [user]@[host] to the beginning of the prompt like bash
+  -- default is false
+@@ -46,10 +46,10 @@ prompt_includeVersionControl = true
+ -- Light Grey: "\x1b[1;30;40m"
+ 
+ -- Prompt Element Colors
+-uah_color = "\x1b[1;33;40m" -- Green = uah = [user]@[hostname]
+-cwd_color = "\x1b[1;32;40m" -- Yellow cwd = Current Working Directory
+-lamb_color = "\x1b[1;30;40m" -- Light Grey = Lambda Color
+-clean_color = "\x1b[1;37;40m"
+-dirty_color = "\x1b[33;3m"
++uah_color = "\x1b[1;33;49m" -- Green = uah = [user]@[hostname]
++cwd_color = "\x1b[1;32;49m" -- Yellow cwd = Current Working Directory
++lamb_color = "\x1b[1;39;49m" -- Light Grey = Lambda Color
++clean_color = "\x1b[1;37;49m"
++dirty_color = "\x1b[33;49m"
+ conflict_color = "\x1b[31;1m"
+ unknown_color = "\x1b[37;1m" -- White = No VCS Status Branch Color
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
 index 45f44a7..d68d937 100644
 --- a/config/user_aliases.cmd
@@ -11,56 +40,3 @@ index 45f44a7..d68d937 100644
 +pecog=peco-tool.bat ghq
 +pecoh=peco-tool.bat history
 +pecohc=peco-tool.bat history clip
-diff --git a/vendor/clink.lua b/vendor/clink.lua
-index 4ba4dd6..8ae83d0 100644
---- a/vendor/clink.lua
-+++ b/vendor/clink.lua
-@@ -5,7 +5,7 @@
- 
- -- luacheck: globals clink
- 
---- At first, load the original clink.lua file
-+-- At first, load the original clink.lua fil
- -- this is needed as we set the script path to this dir and therefore the original
- -- clink.lua is not loaded.
- local clink_lua_file = clink.get_env('CMDER_ROOT')..'\\vendor\\clink\\clink.lua'
-@@ -47,8 +47,8 @@ local function set_prompt_filter()
-     -- build our own prompt
-     -- orig: $E[1;32;40m$P$S{git}{hg}$S$_$E[1;30;40m{lamb}$S$E[0m
-     -- color codes: "\x1b[1;37;40m"
--    local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg}{svn} \n\x1b[1;39;40m{lamb} \x1b[0m"
--    local lambda = "λ"
-+    local cmder_prompt = "\x1b[1;32;49m{cwd} {git}{hg}{svn} \n\x1b[1;39;49m{lamb} \x1b[0m"
-+    local lambda = "$"
-     cmder_prompt = string.gsub(cmder_prompt, "{cwd}", verbatim(cwd))
- 
-     if env ~= nil then
-@@ -302,8 +302,8 @@ local function git_prompt_filter()
- 
-     -- Colors for git status
-     local colors = {
--        clean = "\x1b[1;37;40m",
--        dirty = "\x1b[33;3m",
-+        clean = "\x1b[1;37;49m",
-+        dirty = "\x1b[33;49m",
-         conflict = "\x1b[31;1m"
-     }
- 
-@@ -347,7 +347,7 @@ local function hg_prompt_filter()
-     if hg_dir then
-         -- Colors for mercurial status
-         local colors = {
--            clean = "\x1b[1;37;40m",
-+            clean = "\x1b[1;37;49m",
-             dirty = "\x1b[31;1m",
-         }
- 
-@@ -381,7 +381,7 @@ end
- local function svn_prompt_filter()
-     -- Colors for svn status
-     local colors = {
--        clean = "\x1b[1;37;40m",
-+        clean = "\x1b[1;37;49m",
-         dirty = "\x1b[31;1m",
-     }
- 
