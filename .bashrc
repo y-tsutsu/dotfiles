@@ -162,3 +162,6 @@ function command_not_found_handle(){
     fi
     echo "ハァ…？$1とか何言ってんの？\nコマンドもろくに覚えられないなんて、アンタどうしようもないクズね。"
 }
+
+# Cursor blinking block
+echo -e "\e[1 q" && clear

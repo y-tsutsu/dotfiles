@@ -118,3 +118,6 @@ zle -N peco-src
 # zaw.zsh(history utility)
 source ~/zaw/zaw.zsh
 bindkey '^h' zaw-history
+
+# Cursor blinking block
+echo -e "\e[1 q" && clear
