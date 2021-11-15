@@ -132,7 +132,7 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # pipenv
-eval "$(pipenv --completion)"
+# eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
 
 # goenv
 export GOENV_ROOT=$HOME/.goenv

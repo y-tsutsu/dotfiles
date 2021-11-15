@@ -10,7 +10,7 @@ eval "$(pyenv init -)"
 # pipenv
 autoload -Uz compinit
 compinit
-eval "$(pipenv --completion)"
+eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 
 # goenv
 export GOENV_ROOT=$HOME/.goenv
