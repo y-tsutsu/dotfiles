@@ -33,7 +33,7 @@
         "csharp": "cd $dir && dotnet run --configuration Release",
         "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $fileNameWithoutExt"
     },
-    "git-graph.openNewTabEditorGroup": "Beside",
+    "git-graph.openNewTabEditorGroup": "Two",
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
