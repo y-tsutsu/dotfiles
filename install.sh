@@ -43,8 +43,8 @@ fi
 sudo apt install -y vim emacs texinfo
 
 # etc.
-sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata libappindicator3-1 curl graphviz clang libclang-dev cmake \
-    doxygen gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
+sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata curl graphviz clang libclang-dev cmake doxygen \
+    gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
@@ -54,9 +54,9 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.9.7
+pyenv install 3.10.1
 pyenv install 2.7.18
-pyenv global 3.9.7
+pyenv global 3.10.1
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -68,8 +68,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.17.0
-goenv global 1.17.0
+goenv install 1.17.5
+goenv global 1.17.5
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -100,25 +100,26 @@ sudo apt install -y nodejs
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Qt
-sudo apt install -y qt5-default qtdeclarative5-dev qml-module-qtquick-controls
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 
 # Heroku
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 # .NET Core
 cd /tmp/
-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install -y dotnet-sdk-5.0
+sudo apt install -y dotnet-sdk-6.0
 
 # Visual Studio Code
 cd /tmp/
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
 sudo apt install -y code
@@ -126,7 +127,7 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_4.0.2312.41-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_5.0.2497.32-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
@@ -152,16 +153,16 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # HackGen
 cd /tmp/
-wget https://github.com/yuru7/HackGen/releases/download/v2.4.0/HackGen_v2.4.0.zip
-unzip HackGen_v2.4.0.zip
+wget https://github.com/yuru7/HackGen/releases/download/v2.5.3/HackGen_v2.5.3.zip
+unzip HackGen_v2.5.3.zip
 mkdir -p /home/tsutsu/.local/share/fonts/HackGen
-mv ./HackGen_v2.4.0/HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
+mv ./HackGen_v2.5.3/HackGen*.ttf /home/tsutsu/.local/share/fonts/HackGen/.
 sudo fc-cache -fv
 
 # Cascadia Code
 cd /tmp/
-wget https://github.com/microsoft/cascadia-code/releases/download/v2106.17/CascadiaCode-2106.17.zip
-unzip CascadiaCode-2106.17.zip
+wget https://github.com/microsoft/cascadia-code/releases/download/v2111.01/CascadiaCode-2111.01.zip
+unzip CascadiaCode-2111.01.zip
 mkdir -p /home/tsutsu/.local/share/fonts/cascadia
 mv ./ttf/Cascadia*.ttf /home/tsutsu/.local/share/fonts/cascadia/.
 sudo fc-cache -fv

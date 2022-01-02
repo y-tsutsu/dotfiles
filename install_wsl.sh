@@ -56,8 +56,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.9.7
-pyenv global 3.9.7
+pyenv install 3.10.1
+pyenv global 3.10.1
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -69,8 +69,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.17.0
-goenv global 1.17.0
+goenv install 1.17.5
+goenv global 1.17.5
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -102,12 +102,12 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # .NET Core
 cd /tmp/
-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install -y dotnet-sdk-5.0
+sudo apt install -y dotnet-sdk-6.0
 
 # Docker
 cd /tmp/
