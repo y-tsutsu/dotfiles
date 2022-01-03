@@ -26,4 +26,4 @@ call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter
 call code --install-extension teabyii.ayu
-call code --install-extension wmaurer.vscode-jumpy
+call code --install-extension tranhl.find-then-jump

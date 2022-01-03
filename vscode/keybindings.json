@@ -2,12 +2,12 @@
 [
     {
         "key": "shift+enter",
-        "command": "extension.jumpy-word",
+        "command": "findThenJump.initiate",
         "when": "editorTextFocus"
     },
     {
-        "key": "Escape",
-        "command": "extension.jumpy-exit",
-        "when": "editorTextFocus && jumpy.isJumpyMode"
+        "key": "alt+enter",
+        "command": "findThenJump.initiateWithSelection",
+        "when": "editorTextFocus"
     }
 ]

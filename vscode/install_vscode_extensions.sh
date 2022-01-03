@@ -30,7 +30,7 @@ pkglist=(
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     teabyii.ayu
-    wmaurer.vscode-jumpy
+    tranhl.find-then-jump
 )
 
 for i in ${pkglist[@]}; do
