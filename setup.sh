@@ -16,7 +16,7 @@ do
 done
 
 CONFIG_DIR=$DOTFILES_DIR/.config
-CONFIG_FILES=( pep8 terminator )
+CONFIG_FILES=( terminator )
 for file in ${CONFIG_FILES[@]}
 do
     if [ -d $CONFIG_DIR/$file ]; then
