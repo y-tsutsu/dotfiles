@@ -39,6 +39,9 @@ if [ ! -e $HOME/.oh-my-zsh ]; then
     git clone https://github.com/zsh-users/zaw.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zaw
 fi
 
+# starship
+curl https://starship.rs/install.sh -fsSL | sh -s -- -y
+
 # Tmux Plugin Manager
 if [ ! -e $HOME/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm

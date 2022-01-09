@@ -118,5 +118,8 @@ zle -N peco-src
 # zaw.zsh(history utility)
 bindkey '^h' zaw-history
 
+# starship
+eval "$(starship init zsh)"
+
 # Cursor blinking block
 echo -e "\e[1 q" && clear
