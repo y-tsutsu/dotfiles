@@ -36,6 +36,7 @@ index 45f44a7..d68d937 100644
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
 +cd~=cd %HOMEPATH%
++cdtmp=cd %TEMP%
 +rmtmp=rm -rf %TEMP%/*
 +pecog=peco-tool.bat ghq
 +pecoh=peco-tool.bat history
