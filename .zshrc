@@ -49,7 +49,7 @@ ZSH_THEME="crcandy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zaw)
 
 # User configuration
 
@@ -116,7 +116,6 @@ function peco-src() {
 zle -N peco-src
 
 # zaw.zsh(history utility)
-source ~/zaw/zaw.zsh
 bindkey '^h' zaw-history
 
 # Cursor blinking block
