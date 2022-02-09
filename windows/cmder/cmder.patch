@@ -31,7 +31,7 @@ diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
 index 45f44a7..d68d937 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
-@@ -12,3 +12,8 @@ clear=cls
+@@ -12,3 +12,9 @@ clear=cls
  unalias=alias /d $1
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
