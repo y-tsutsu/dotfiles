@@ -1,6 +1,7 @@
 {
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.fontFamily": "'Cascadia Code', HackGen, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
