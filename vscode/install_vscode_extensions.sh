@@ -14,6 +14,7 @@ pkglist=(
     jebbs.plantuml
     Kelvin.vscode-sshfs
     marp-team.marp-vscode
+    matklad.rust-analyzer
     mechatroner.rainbow-csv
     mhutchie.git-graph
     michelemelluso.code-beautifier
@@ -31,6 +32,7 @@ pkglist=(
     shuworks.vscode-table-formatter
     teabyii.ayu
     tranhl.find-then-jump
+    vadimcn.vscode-lldb
 )
 
 for i in ${pkglist[@]}; do
