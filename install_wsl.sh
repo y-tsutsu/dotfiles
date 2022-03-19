@@ -29,7 +29,7 @@ git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(r
 git config --global ghq.root $HOME/dev/src
 
 # terminator zsh tmux
-sudo apt install -y terminator zsh tmux xsel
+sudo apt install -y terminator zsh tmux xsel curl
 
 # oh-my-zsh
 if [ ! -e $HOME/.oh-my-zsh ]; then
@@ -48,7 +48,7 @@ if [ ! -e $HOME/.tmux/plugins/tpm ]; then
 fi
 
 # etc.
-sudo apt install -y vim ruby tig gdb valgrind strace curl clang libclang-dev cmake locate rpm exuberant-ctags sshfs jp2a apt-file xclip gettext-base
+sudo apt install -y vim ruby tig gdb valgrind strace clang libclang-dev cmake locate rpm exuberant-ctags sshfs jp2a apt-file xclip gettext-base
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget

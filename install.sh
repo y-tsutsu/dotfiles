@@ -23,7 +23,7 @@ git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
 # terminator zsh tmux
-sudo apt install -y terminator zsh tmux xsel
+sudo apt install -y terminator zsh tmux xsel curl
 
 # oh-my-zsh
 if [ ! -e $HOME/.oh-my-zsh ]; then
@@ -45,7 +45,7 @@ fi
 sudo apt install -y vim emacs texinfo
 
 # etc.
-sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata curl graphviz clang libclang-dev cmake doxygen \
+sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata graphviz clang libclang-dev cmake doxygen \
     gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
 
 # python
