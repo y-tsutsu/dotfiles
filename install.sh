@@ -56,9 +56,9 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.10.3
+pyenv install 3.10.4
 pyenv install 2.7.18
-pyenv global 3.10.3
+pyenv global 3.10.4
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -70,8 +70,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.18.0
-goenv global 1.18.0
+goenv install 1.18.1
+goenv global 1.18.1
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -83,8 +83,8 @@ go install github.com/k0kubun/pp@latest
 go install golang.org/x/tools/cmd/godoc@latest
 go install github.com/jessevdk/go-assets-builder@latest
 cd /tmp/
-wget https://github.com/x-motemen/ghq/releases/download/v1.1.5/ghq_linux_amd64.zip
-wget https://github.com/peco/peco/releases/download/v0.5.8/peco_linux_amd64.tar.gz
+wget https://github.com/x-motemen/ghq/releases/download/v1.3.0/ghq_linux_amd64.zip
+wget https://github.com/peco/peco/releases/download/v0.5.10/peco_linux_amd64.tar.gz
 wget https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-amd64
 unzip ghq_linux_amd64.zip
 mv ghq_linux_amd64/ghq $GOPATH/bin/.

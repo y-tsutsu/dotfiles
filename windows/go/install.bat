@@ -12,8 +12,8 @@ go install github.com/jessevdk/go-assets-builder@latest
 mkdir temp
 cd temp
 
-wget --no-check-certificate https://github.com/x-motemen/ghq/releases/download/v1.1.5/ghq_windows_amd64.zip
-wget --no-check-certificate https://github.com/peco/peco/releases/download/v0.5.8/peco_windows_amd64.zip
+wget --no-check-certificate https://github.com/x-motemen/ghq/releases/download/v1.3.0/ghq_windows_amd64.zip
+wget --no-check-certificate https://github.com/peco/peco/releases/download/v0.5.10/peco_windows_amd64.zip
 wget --no-check-certificate https://github.com/golang/dep/releases/download/v0.5.4/dep-windows-amd64.exe
 unzip ghq_windows_amd64.zip
 mv ghq_windows_amd64/ghq %GOPATH%/bin/.
