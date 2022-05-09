@@ -77,7 +77,7 @@ mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
 export GOPATH=$HOME/dev
 export PATH=$GOPATH/bin:$PATH
-env GO111MODULE=on go get -u github.com/motemen/gore/cmd/gore
+go install github.com/x-motemen/gore/cmd/gore@latest
 go install github.com/nsf/gocode@latest
 go install github.com/k0kubun/pp@latest
 go install golang.org/x/tools/cmd/godoc@latest
