@@ -12,6 +12,7 @@ patch -p1 < ../diff.patch
 @REM PDCurses clone & build
 git clone https://github.com/wmcbrine/PDCurses.git
 cd PDCurses/wincon
+git checkout a7b47c22
 make -j2
 mv ./pdcurses.a ./libpdcurses.a
 
