@@ -49,7 +49,8 @@ sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inco
     gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
 
 # python
-sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget
+sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget \
+    llvm libncursesw5-dev xz-utils  libxml2-dev libxmlsec1-dev liblzma-dev
 git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 git clone https://github.com/pyenv/pyenv-update.git $HOME/.pyenv/plugins/pyenv-update
 export PYENV_ROOT=$HOME/.pyenv
