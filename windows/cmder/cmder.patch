@@ -1,5 +1,5 @@
 diff --git a/config/cmder_prompt_config.lua b/config/cmder_prompt_config.lua
-index 6847f25..88ed727 100644
+index 6847f25..81ba47f 100644
 --- a/config/cmder_prompt_config.lua
 +++ b/config/cmder_prompt_config.lua
 @@ -19,7 +19,7 @@ prompt_homeSymbol = "~"
@@ -11,7 +11,7 @@ index 6847f25..88ed727 100644
  
  -- REQUIRED. Adds [user]@[host] to the beginning of the prompt like bash
   -- default is false
-@@ -46,10 +46,10 @@ prompt_includeVersionControl = true
+@@ -46,10 +46,13 @@ prompt_includeVersionControl = true
  -- Light Grey: "\x1b[1;30;40m"
  
  -- Prompt Element Colors
@@ -27,8 +27,11 @@ index 6847f25..88ed727 100644
 +dirty_color = "\x1b[33;49m"
  conflict_color = "\x1b[31;1m"
  unknown_color = "\x1b[37;1m" -- White = No VCS Status Branch Color
++
++-- Starship
++load(io.popen('starship init cmd'):read("*a"))()
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
-index 45f44a7..d68d937 100644
+index 45f44a7..5dbcca5 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
 @@ -12,3 +12,10 @@ clear=cls
