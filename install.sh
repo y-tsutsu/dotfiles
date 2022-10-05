@@ -172,7 +172,7 @@ sudo apt install -y libgtest-dev
 cd /usr/src/gtest/
 sudo cmake .
 sudo make -j4
-sudo ln -s *.a /usr/lib/.
+sudo ln -s `pwd`/lib/*.a /usr/lib/.
 
 # VMware share
 sudo mkdir /mnt/hgfs
