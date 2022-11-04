@@ -42,6 +42,7 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
     "glassit.alpha": 230,
+    "python.analysis.autoImportCompletions": true,
     "python.linting.flake8Enabled": true,
     "python.terminal.activateEnvironment": false,
     "vscodeGoogleTranslate.preferredLanguage": "Japanese"
