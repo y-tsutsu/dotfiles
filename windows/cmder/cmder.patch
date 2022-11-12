@@ -1,5 +1,5 @@
 diff --git a/config/cmder_prompt_config.lua b/config/cmder_prompt_config.lua
-index 6847f25..81ba47f 100644
+index bd300ed..099453b 100644
 --- a/config/cmder_prompt_config.lua
 +++ b/config/cmder_prompt_config.lua
 @@ -19,7 +19,7 @@ prompt_homeSymbol = "~"
@@ -11,33 +11,21 @@ index 6847f25..81ba47f 100644
  
  -- REQUIRED. Adds [user]@[host] to the beginning of the prompt like bash
   -- default is false
-@@ -46,10 +46,13 @@ prompt_includeVersionControl = true
- -- Light Grey: "\x1b[1;30;40m"
- 
- -- Prompt Element Colors
--uah_color = "\x1b[1;33;40m" -- Green = uah = [user]@[hostname]
--cwd_color = "\x1b[1;32;40m" -- Yellow cwd = Current Working Directory
--lamb_color = "\x1b[1;30;40m" -- Light Grey = Lambda Color
--clean_color = "\x1b[1;37;40m"
--dirty_color = "\x1b[33;3m"
-+uah_color = "\x1b[1;33;49m" -- Green = uah = [user]@[hostname]
-+cwd_color = "\x1b[1;32;49m" -- Yellow cwd = Current Working Directory
-+lamb_color = "\x1b[1;39;49m" -- Light Grey = Lambda Color
-+clean_color = "\x1b[1;37;49m"
-+dirty_color = "\x1b[33;49m"
+@@ -58,3 +58,6 @@ clean_color = "\x1b[1;37;49m"
+ dirty_color = "\x1b[33;3m"
  conflict_color = "\x1b[31;1m"
  unknown_color = "\x1b[37;1m" -- White = No VCS Status Branch Color
 +
 +-- Starship
 +load(io.popen('starship init cmd'):read("*a"))()
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
-index 45f44a7..5dbcca5 100644
+index 9dccdc4..f278388 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
-@@ -12,3 +12,10 @@ clear=cls
- unalias=alias /d $1
+@@ -13,3 +13,11 @@ unalias=alias /d $1
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
+ pwsh=%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression '. ''%CMDER_ROOT%/vendor/profile.ps1'''"
 +cd~=cd %HOMEPATH%
 +cdtmp=cd %TEMP%
 +rmtmp=rm -rf %TEMP%/*
@@ -45,3 +33,4 @@ index 45f44a7..5dbcca5 100644
 +pecoh=peco-tool.bat history
 +pecohc=peco-tool.bat history clip
 +screenfetch=powershell -NoProfile -ExecutionPolicy Unrestricted screenfetch
++blink=docker run --rm ubuntu echo -e "\e[1 q"
