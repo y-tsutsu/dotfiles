@@ -141,5 +141,31 @@ sudo cmake .
 sudo make -j4
 sudo ln -s `pwd`/lib/*.a /usr/lib/.
 
+# Windowsのフォントを使用可能に設定
+cat << 'EOS' | sudo tee /etc/fonts/local.conf
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+    <dir>/mnt/c/Windows/Fonts</dir>
+</fontconfig>
+<!-- Created by bash script from https://astherier.com/blog/2021/07/windows11-wsl2-wslg-japanese/ -->
+EOS
+
+# Fcitx，Mozc
+sudo apt install -y fcitx-mozc dbus-x11
+sudo sh -c "dbus-uuidgen > /var/lib/dbus/machine-id"
+cat << 'EOS' | tee -a ~/.profile
+# Added by bash script from https://astherier.com/blog/2021/07/windows11-wsl2-wslg-japanese/
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export DefaultIMModule=fcitx
+if [ $SHLVL = 1 ] ; then
+  (fcitx-autostart > /dev/null 2>&1 &)
+  xset -r 49 > /dev/null 2>&1
+fi
+# Added by bash script: end
+EOS
+
 sudo apt update
 sudo apt upgrade -y
