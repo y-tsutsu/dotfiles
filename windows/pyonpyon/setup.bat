@@ -7,7 +7,7 @@ cd /d %WORK%
 git clone https://github.com/sgymtic/sl.git
 cd ./sl
 git checkout pyonpyon
-patch -p1 < ../diff.patch
+patch -p1 < ../sl.patch
 
 @REM PDCurses clone & build
 git clone https://github.com/wmcbrine/PDCurses.git

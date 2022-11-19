@@ -19,10 +19,10 @@ index bd300ed..099453b 100644
 +-- Starship
 +load(io.popen('starship init cmd'):read("*a"))()
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
-index 9dccdc4..f278388 100644
+index 9dccdc4..62f9bdf 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
-@@ -13,3 +13,11 @@ unalias=alias /d $1
+@@ -13,3 +13,12 @@ unalias=alias /d $1
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
  pwsh=%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression '. ''%CMDER_ROOT%/vendor/profile.ps1'''"
@@ -33,4 +33,5 @@ index 9dccdc4..f278388 100644
 +pecoh=peco-tool.bat history
 +pecohc=peco-tool.bat history clip
 +screenfetch=powershell -NoProfile -ExecutionPolicy Unrestricted screenfetch
++grep=grep --color=auto $*
 +blink=docker run --rm ubuntu echo -e "\e[1 q"
