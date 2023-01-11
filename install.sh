@@ -103,7 +103,7 @@ sudo apt install -y nodejs
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Qt
-sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtdeclarative5-dev qtwayland5 qtwayland5-dev-tools
 
 # Heroku
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh

@@ -103,6 +103,12 @@ sudo apt install -y nodejs
 # Rust
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 
+# Qt
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtdeclarative5-dev qtwayland5 qtwayland5-dev-tools
+
+# Heroku
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 # .NET Core
 cd /tmp/
 wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
