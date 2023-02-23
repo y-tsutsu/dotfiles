@@ -10,7 +10,6 @@ call code --install-extension golang.go
 call code --install-extension jebbs.plantuml
 call code --install-extension Kelvin.vscode-sshfs
 call code --install-extension marp-team.marp-vscode
-call code --install-extension matklad.rust-analyzer
 call code --install-extension mechatroner.rainbow-csv
 call code --install-extension mhutchie.git-graph
 call code --install-extension michelemelluso.code-beautifier
@@ -23,6 +22,7 @@ call code --install-extension ms-vscode.cmake-tools
 call code --install-extension ms-vscode.cpptools
 call code --install-extension octref.vetur
 call code --install-extension s-nlf-fh.glassit
+call code --install-extension rust-lang.rust-analyzer
 call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter

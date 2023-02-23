@@ -14,7 +14,6 @@ pkglist=(
     jebbs.plantuml
     Kelvin.vscode-sshfs
     marp-team.marp-vscode
-    matklad.rust-analyzer
     mechatroner.rainbow-csv
     mhutchie.git-graph
     michelemelluso.code-beautifier
@@ -26,6 +25,7 @@ pkglist=(
     ms-vscode.cmake-tools
     ms-vscode.cpptools
     octref.vetur
+    rust-lang.rust-analyzer
     s-nlf-fh.glassit
     seanwu.vscode-qt-for-python
     shakram02.bash-beautify
