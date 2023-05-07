@@ -45,5 +45,6 @@
     "python.analysis.autoImportCompletions": true,
     "python.linting.flake8Enabled": true,
     "python.terminal.activateEnvironment": false,
+    "rust-analyzer.check.command": "clippy",
     "vscodeGoogleTranslate.preferredLanguage": "Japanese"
 }
