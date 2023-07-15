@@ -57,9 +57,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.11.3
-pyenv install 2.7.18
-pyenv global 3.11.3
+pyenv install 3.11.4
+pyenv global 3.11.4
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -71,8 +70,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.20.2
-goenv global 1.20.2
+goenv install 1.20.6
+goenv global 1.20.6
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -130,26 +129,26 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_6.0.2979.15-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_6.1.3035.111-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
 
 # Docker
 cd /tmp/
-sudo apt remove docker docker-engine docker.io containerd runc
-sudo apt install -y ca-certificates gnupg lsb-release
-sudo mkdir -p /etc/apt/keyrings
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt remove $pkg; done
+sudo apt install -y ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 sudo systemctl restart docker
-sudo curl -L https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+sudo apt install docker-compose-plugin
 
 # lazygit
 cd /tmp/
