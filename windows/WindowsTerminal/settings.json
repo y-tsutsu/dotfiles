@@ -30,12 +30,17 @@
     "copyOnSelect": false,
     "defaultProfile": "{30c5d884-3168-4c08-9182-1134fa529caf}",
     "launchMode": "maximized",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": {
         "defaults": {
             "colorScheme": "Tango Dark",
             "cursorShape": "filledBox",
             "font": {
-                "size": 10
+                "size": 10.0
             },
             "opacity": 80,
             "useAcrylic": true
@@ -417,5 +422,42 @@
         }
     ],
     "theme": "system",
-    "themes": []
+    "themes": [
+        {
+            "name": "legacyDark",
+            "tab": {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ]
 }
