@@ -19,6 +19,7 @@ pkglist=(
     ms-azuretools.vscode-docker
     MS-CEINTL.vscode-language-pack-ja
     ms-dotnettools.csharp
+    ms-python.autopep8
     ms-python.flake8
     ms-python.isort
     ms-python.python

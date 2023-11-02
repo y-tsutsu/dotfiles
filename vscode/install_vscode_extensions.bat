@@ -15,6 +15,7 @@ call code --install-extension michelemelluso.code-beautifier
 call code --install-extension ms-azuretools.vscode-docker
 call code --install-extension MS-CEINTL.vscode-language-pack-ja
 call code --install-extension ms-dotnettools.csharp
+call code --install-extension ms-python.autopep8
 call code --install-extension ms-python.flake8
 call code --install-extension ms-python.isort
 call code --install-extension ms-python.python
@@ -22,8 +23,8 @@ call code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 call code --install-extension ms-vscode.cmake-tools
 call code --install-extension ms-vscode.cpptools
 call code --install-extension octref.vetur
-call code --install-extension s-nlf-fh.glassit
 call code --install-extension rust-lang.rust-analyzer
+call code --install-extension s-nlf-fh.glassit
 call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter
