@@ -3,7 +3,7 @@
     "diffEditor.renderSideBySide": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.copyWithSyntaxHighlighting": false,
-    "editor.fontFamily": "'Cascadia Code', HackGen, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Cascadia Code', 'UDEV Gothic', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.parameterHints.enabled": false,
