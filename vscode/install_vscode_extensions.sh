@@ -2,23 +2,23 @@
 
 # Visual Studio Code :: Package list
 pkglist=(
-    alefragnani.Bookmarks
+    alefragnani.bookmarks
     christian-kohler.path-intellisense
     codezombiech.gitignore
     eamodio.gitlens
-    EditorConfig.EditorConfig
+    editorconfig.editorconfig
     formulahendry.code-runner
     funkyremi.vscode-google-translate
     golang.go
     jebbs.plantuml
-    Kelvin.vscode-sshfs
+    kelvin.vscode-sshfs
     marp-team.marp-vscode
     mechatroner.rainbow-csv
     mhutchie.git-graph
     michelemelluso.code-beautifier
     ms-azuretools.vscode-docker
-    MS-CEINTL.vscode-language-pack-ja
-    ms-dotnettools.csharp
+    ms-ceintl.vscode-language-pack-ja
+    ms-dotnettools.csdevkit
     ms-python.autopep8
     ms-python.flake8
     ms-python.isort
