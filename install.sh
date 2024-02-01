@@ -107,14 +107,14 @@ sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtdeclarat
 # Heroku
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
-# .NET Core
+# .NET
 cd /tmp/
 wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install -y dotnet-sdk-6.0
+sudo apt install -y dotnet-sdk-8.0
 
 # Visual Studio Code
 cd /tmp/
