@@ -8,6 +8,7 @@
     "editor.minimap.enabled": false,
     "editor.parameterHints.enabled": false,
     "editor.renderWhitespace": "boundary",
+    "editor.stickyScroll.enabled": false,
     "remote.restoreForwardedPorts": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.defaultProfile.linux": "zsh",
