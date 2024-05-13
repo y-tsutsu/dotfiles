@@ -17,7 +17,7 @@ diverged = "😵"
 untracked = "🌚"
 stashed = "📦"
 modified = "📝"
-staged = '🔦'
+staged = "🔦"
 renamed = "🏷"
 deleted = "🗑"
 
