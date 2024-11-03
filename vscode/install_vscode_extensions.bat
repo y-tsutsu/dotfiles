@@ -25,10 +25,10 @@ call code --install-extension ms-vscode.cpptools
 call code --install-extension octref.vetur
 call code --install-extension rust-lang.rust-analyzer
 call code --install-extension s-nlf-fh.glassit
-call code --install-extension seanwu.vscode-qt-for-python
 call code --install-extension shakram02.bash-beautify
 call code --install-extension shuworks.vscode-table-formatter
 call code --install-extension tamasfe.even-better-toml
 call code --install-extension teabyii.ayu
+call code --install-extension theqtcompany.qt
 call code --install-extension tranhl.find-then-jump
 call code --install-extension vadimcn.vscode-lldb

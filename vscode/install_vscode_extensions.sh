@@ -29,11 +29,11 @@ pkglist=(
     octref.vetur
     rust-lang.rust-analyzer
     s-nlf-fh.glassit
-    seanwu.vscode-qt-for-python
     shakram02.bash-beautify
     shuworks.vscode-table-formatter
     tamasfe.even-better-toml
     teabyii.ayu
+    theqtcompany.qt
     tranhl.find-then-jump
     vadimcn.vscode-lldb
 )
