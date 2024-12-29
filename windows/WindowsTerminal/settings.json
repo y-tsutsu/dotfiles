@@ -40,6 +40,7 @@
             "colorScheme": "Tango Dark",
             "cursorShape": "filledBox",
             "font": {
+                "face": "Cascadia Mono, UDEV Gothic",
                 "size": 10
             },
             "opacity": 90
