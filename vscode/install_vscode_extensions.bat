@@ -1,4 +1,5 @@
 call code --install-extension alefragnani.bookmarks
+call code --install-extension chaitanyashahare.lazygit
 call code --install-extension christian-kohler.path-intellisense
 call code --install-extension codezombiech.gitignore
 call code --install-extension eamodio.gitlens

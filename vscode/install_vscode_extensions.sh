@@ -3,6 +3,7 @@
 # Visual Studio Code :: Package list
 pkglist=(
     alefragnani.bookmarks
+    chaitanyashahare.lazygit
     christian-kohler.path-intellisense
     codezombiech.gitignore
     eamodio.gitlens
