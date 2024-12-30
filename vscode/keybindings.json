@@ -9,5 +9,15 @@
         "key": "alt+enter",
         "command": "findThenJump.initiateWithSelection",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "git.stage",
+        "when": "diffEditorHasChanges || sideBarFocus && activeViewlet == workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "git.unstage",
+        "when": "diffEditorHasChanges || sideBarFocus && activeViewlet == workbench.view.scm"
     }
 ]
