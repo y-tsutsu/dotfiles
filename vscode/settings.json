@@ -40,6 +40,8 @@
         "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt && rm $fileNameWithoutExt"
     },
     "git-graph.openNewTabEditorGroup": "Two",
+    "git-graph.repository.commits.initialLoad": 3000,
+    "git-graph.repository.commits.loadMore": 1000,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.currentLine.enabled": false,
