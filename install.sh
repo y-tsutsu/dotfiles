@@ -18,7 +18,7 @@ git config --global merge.tool 'code --wait "$MERGED"'
 git config --global push.default simple
 git config --global pull.rebase false
 git config --global core.quotepath false
-git config --global alias.mylog 'log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+git config --global alias.mylog 'log --graph --color=always --name-status --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"'
 git config --global ghq.root $HOME/dev/src
 sudo apt install -y subversion subversion-tools
 
