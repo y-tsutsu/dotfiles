@@ -16,7 +16,7 @@ do
 done
 
 CONFIG_DIR=$DOTFILES_DIR/.config
-CONFIG_FILES=( terminator starship.toml )
+CONFIG_FILES=( lazygit terminator starship.toml )
 for file in ${CONFIG_FILES[@]}
 do
     if [ -d $CONFIG_DIR/$file ]; then
