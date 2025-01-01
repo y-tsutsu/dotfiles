@@ -28,6 +28,7 @@ pkglist=(
     ms-vscode.cmake-tools
     ms-vscode.cpptools
     octref.vetur
+    redhat.vscode-yaml
     rust-lang.rust-analyzer
     s-nlf-fh.glassit
     shakram02.bash-beautify
