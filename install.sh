@@ -58,8 +58,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.12.5
-pyenv global 3.12.5
+pyenv install 3.12.8
+pyenv global 3.12.8
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -71,8 +71,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.22.6
-goenv global 1.22.6
+goenv install 1.23.4
+goenv global 1.23.4
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -84,8 +84,8 @@ go install github.com/k0kubun/pp@latest
 go install golang.org/x/tools/cmd/godoc@latest
 go install github.com/jessevdk/go-assets-builder@latest
 cd /tmp/
-wget https://github.com/x-motemen/ghq/releases/download/v1.3.0/ghq_linux_amd64.zip
-wget https://github.com/peco/peco/releases/download/v0.5.10/peco_linux_amd64.tar.gz
+wget https://github.com/x-motemen/ghq/releases/download/v1.7.1/ghq_linux_amd64.zip
+wget https://github.com/peco/peco/releases/download/v0.5.11/peco_linux_amd64.tar.gz
 wget https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-amd64
 unzip ghq_linux_amd64.zip
 mv ghq_linux_amd64/ghq $GOPATH/bin/.
@@ -135,6 +135,7 @@ sudo apt install -y -f
 # Docker
 cd /tmp/
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt remove $pkg; done
+sudo apt update
 sudo apt install -y ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
