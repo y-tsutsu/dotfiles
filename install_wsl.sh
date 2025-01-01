@@ -157,8 +157,7 @@ cat << 'EOS' | sudo tee /etc/fonts/local.conf
 EOS
 
 # Fcitx，Mozc
-sudo apt install -y fcitx-mozc dbus-x11
-sudo sh -c "dbus-uuidgen > /var/lib/dbus/machine-id"
+sudo apt install -y fcitx-mozc
 cat << 'EOS' | tee -a ~/.profile
 # Added by bash script from https://astherier.com/blog/2021/07/windows11-wsl2-wslg-japanese/
 export GTK_IM_MODULE=fcitx
@@ -171,6 +170,7 @@ if [ $SHLVL = 1 ] ; then
 fi
 # Added by bash script: end
 EOS
+fcitx-config-gtk3
 
 sudo apt update
 sudo apt upgrade -y
