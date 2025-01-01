@@ -1,3 +1,7 @@
 git:
-  branchLogCmd: "git log --graph --color=always --name-status --pretty='%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' {{branchName}}"
-  allBranchesLogCmd: "git log --graph --color=always --name-status --pretty='%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
+  branchLogCmd: "git log --graph --color=always --name-status --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' {{branchName}}"
+  allBranchesLogCmd: "git log --graph --color=always --name-status --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
+  # Support does not extend to Windows users, because we're making use of a package which doesn't have Windows support.
+  # paging:
+  #   colorArg: always
+  #   pager: diff-so-fancy

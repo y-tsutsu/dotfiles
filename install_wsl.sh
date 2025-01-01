@@ -37,6 +37,7 @@ if [ ! -e $HOME/.oh-my-zsh ]; then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zaw.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zaw
+    git clone https://github.com/z-shell/zsh-diff-so-fancy.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-diff-so-fancy
 fi
 
 # starship
@@ -135,6 +136,7 @@ cd /tmp/
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' |  sed -E 's/.*"v*([^"]+)".*/\1/')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
+sudo npm install -g diff-so-fancy
 
 # Google Test
 sudo apt install -y libgtest-dev
