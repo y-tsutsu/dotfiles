@@ -101,6 +101,7 @@ sudo apt install -y nodejs
 
 # Rust
 curl https://sh.rustup.rs -sSf | sh -s -- -y
+source "$HOME/.cargo/env"
 
 # Qt
 sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtdeclarative5-dev qtwayland5 qtwayland5-dev-tools
@@ -154,6 +155,14 @@ LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/re
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 sudo npm install -g diff-so-fancy
+
+# yazi
+cd /tmp/
+git clone https://github.com/sxyazi/yazi.git
+cd yazi
+cargo build --release --locked
+sudo mv target/release/yazi target/release/ya /usr/local/bin/.
+sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
 
 # HackGen
 cd /tmp/
