@@ -1,5 +1,5 @@
 diff --git a/config/cmder_prompt_config.lua b/config/cmder_prompt_config.lua
-index bd300ed..099453b 100644
+index 0c99bd8..9740e44 100644
 --- a/config/cmder_prompt_config.lua
 +++ b/config/cmder_prompt_config.lua
 @@ -19,7 +19,7 @@ prompt_homeSymbol = "~"
@@ -11,18 +11,18 @@ index bd300ed..099453b 100644
  
  -- REQUIRED. Adds [user]@[host] to the beginning of the prompt like bash
   -- default is false
-@@ -58,3 +58,6 @@ clean_color = "\x1b[1;37;49m"
- dirty_color = "\x1b[33;3m"
- conflict_color = "\x1b[31;1m"
+@@ -60,3 +60,6 @@ clean_color = "\x1b[37;1m"
+ dirty_color = "\x1b[33;3m" -- Yellow, Italic
+ conflict_color = "\x1b[31;1m" -- Red, Bold
  unknown_color = "\x1b[37;1m" -- White = No VCS Status Branch Color
 +
 +-- Starship
 +load(io.popen('starship init cmd'):read("*a"))()
 diff --git a/config/user_aliases.cmd b/config/user_aliases.cmd
-index 9dccdc4..62f9bdf 100644
+index c695704..1dd1d3a 100644
 --- a/config/user_aliases.cmd
 +++ b/config/user_aliases.cmd
-@@ -13,3 +13,12 @@ unalias=alias /d $1
+@@ -14,3 +14,13 @@ unalias=alias /d $1
  vi=vim $*
  cmderr=cd /d "%CMDER_ROOT%"
  pwsh=%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command "Invoke-Expression '. ''%CMDER_ROOT%/vendor/profile.ps1'''"
@@ -35,3 +35,4 @@ index 9dccdc4..62f9bdf 100644
 +screenfetch=powershell -NoProfile -ExecutionPolicy Unrestricted screenfetch
 +grep=grep --color=auto $*
 +blink=docker run --rm ubuntu echo -e "\e[1 q"
++pbat=bat --pager=never --plain $*
