@@ -106,6 +106,8 @@ alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)
 alias rtags="rc -J ."
 alias clip="xclip -selection c"
 alias rmtmp="rm -rf /tmp/*"
+alias bat="batcat"
+alias pbat="bat --pager=never --plain"
 
 # mkdir + cd
 function mkcd() { mkdir -p $1 && cd $1 }

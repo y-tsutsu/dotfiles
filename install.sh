@@ -163,6 +163,7 @@ cd yazi
 cargo build --release --locked
 sudo mv target/release/yazi target/release/ya /usr/local/bin/.
 sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+sudo apt install -y bat
 
 # HackGen
 cd /tmp/
