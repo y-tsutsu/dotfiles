@@ -47,7 +47,7 @@ sudo apt install -y vim emacs texinfo
 
 # etc.
 sudo apt install -y ruby tig libncurses5-dev gdb valgrind strace meld fonts-inconsolata graphviz clang libclang-dev cmake doxygen \
-    gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip
+    gconf2 locate rpm exuberant-ctags sshfs cifs-utils arc-theme libgles2-mesa-dev libegl1-mesa-dev xorg-dev jp2a apt-file libtinfo5 xclip psmisc
 
 # python
 sudo apt install -y libsqlite3-dev libreadline-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 tk-dev zip libssl-dev libffi-dev wget \
