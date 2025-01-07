@@ -47,7 +47,7 @@
         },
         "list": [
             {
-                "colorScheme": "Monokai Cmder",
+                "colorScheme": "iceberg-dark",
                 "commandline": "cmd.exe /k %USERPROFILE%\\cmder\\vendor\\init.bat",
                 "guid": "{30c5d884-3168-4c08-9182-1134fa529caf}",
                 "hidden": false,
@@ -56,7 +56,7 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "colorScheme": "iceberg-dark",
+                "colorScheme": "Ayu Mirage",
                 "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Debian",
                 "guid": "{10334ee2-eb90-4fca-80ce-70ddff97ce9b}",
                 "hidden": false,
