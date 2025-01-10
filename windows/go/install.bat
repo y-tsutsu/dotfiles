@@ -3,7 +3,7 @@
 set WORK=%~dp0
 cd /d %WORK%
 
-env GO111MODULE=on go get -u github.com/motemen/gore/cmd/gore
+go install github.com/x-motemen/gore/cmd/gore@latest
 go install github.com/nsf/gocode@latest
 go install github.com/k0kubun/pp@latest
 go install golang.org/x/tools/cmd/godoc@latest

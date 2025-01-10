@@ -60,8 +60,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.12.8
-pyenv global 3.12.8
+pyenv install 3.13.1
+pyenv global 3.13.1
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -148,7 +148,7 @@ cargo build --release --locked
 sudo mv target/release/yazi target/release/ya /usr/local/bin/.
 sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
 sudo apt install -y bat
-ya pack -a dedukun/bookmarks
+# ya pack -a dedukun/bookmarks
 
 # Google Test
 sudo apt install -y libgtest-dev
