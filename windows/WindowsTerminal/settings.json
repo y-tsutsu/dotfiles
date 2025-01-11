@@ -57,12 +57,10 @@
             },
             {
                 "colorScheme": "Ayu Mirage",
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Debian",
-                "guid": "{10334ee2-eb90-4fca-80ce-70ddff97ce9b}",
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "Debian",
-                "startingDirectory": "~"
+                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -96,6 +94,18 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{b2b8fd4d-7228-5ff6-bced-0069ded95b01}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{1e4857d5-7874-5e7d-bf09-ab4820d736d7}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
