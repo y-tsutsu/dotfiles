@@ -25,3 +25,6 @@ do
         ln -s $CONFIG_DIR/$file $HOME/.config/$file
     fi
 done
+
+# yaziディレクトリの移動後に実行したいのでinstall.shから移動
+ya pack -a dedukun/bookmarks
