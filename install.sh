@@ -4,13 +4,13 @@ DOTFILES_DIR=`pwd`
 cd $HOME
 
 # build-essential
-# sudo apt install -y build-essential
+sudo apt install -y build-essential
 
 # open-vm-tools
-# sudo apt install -y open-vm-tools open-vm-tools-desktop
+sudo apt install -y open-vm-tools open-vm-tools-desktop
 
 # git subversion（git本体は事前にインストール）
-# sudo apt install -y git
+sudo apt install -y git
 git config --global user.name 'tsutsu'
 git config --global user.email 'tsutsu0928@gmail.com'
 git config --global core.editor 'code --wait'
@@ -128,7 +128,7 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_6.7.3329.17-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_7.0.3495.29-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
@@ -168,7 +168,7 @@ sudo apt install -y bat
 
 # HackGen
 cd /tmp/
-HACKGEN_VERSION=v2.9.0
+HACKGEN_VERSION=v2.10.0
 wget https://github.com/yuru7/HackGen/releases/download/${HACKGEN_VERSION}/HackGen_${HACKGEN_VERSION}.zip
 unzip HackGen_${HACKGEN_VERSION}.zip
 mkdir -p /home/tsutsu/.local/share/fonts/HackGen
@@ -177,7 +177,7 @@ sudo fc-cache -fv
 
 # UDEV Gothic
 cd /tmp/
-UDEVG_VERSION=v1.3.1
+UDEVG_VERSION=v2.1.0
 wget https://github.com/yuru7/udev-gothic/releases/download/${UDEVG_VERSION}/UDEVGothic_${UDEVG_VERSION}.zip
 unzip UDEVGothic_${UDEVG_VERSION}.zip
 mkdir -p /home/tsutsu/.local/share/fonts/UDEVGothic
@@ -186,8 +186,8 @@ sudo fc-cache -fv
 
 # Cascadia Code
 cd /tmp/
-wget https://github.com/microsoft/cascadia-code/releases/download/v2111.01/CascadiaCode-2111.01.zip
-unzip CascadiaCode-2111.01.zip
+wget https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip
+unzip CascadiaCode-2407.24.zip
 mkdir -p /home/tsutsu/.local/share/fonts/cascadia
 mv ./ttf/Cascadia*.ttf /home/tsutsu/.local/share/fonts/cascadia/.
 sudo fc-cache -fv
