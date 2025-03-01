@@ -1,0 +1,13 @@
+diff --git a/main.lua b/main.lua
+index acbd8e7..51fb3b6 100644
+--- a/main.lua
++++ b/main.lua
+@@ -1,7 +1,7 @@
+ local M = {}
+ 
+ function M:peek(job)
+-    local child = Command("bat")
++    local child = Command("batcat")
+         :args({
+             "--style", "plain",
+             "--color", "always",

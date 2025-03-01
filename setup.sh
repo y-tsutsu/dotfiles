@@ -28,3 +28,5 @@ done
 
 # yaziディレクトリの移動後に実行したいのでinstall.shから移動
 ya pack -a dedukun/bookmarks
+git clone https://github.com/mgumz/yazi-plugin-bat.git ~/.config/yazi/plugins/bat.yazi
+patch -d ~/.config/yazi/plugins/bat.yazi -p1 < ./.config/yazi/yazi-bat.patch
