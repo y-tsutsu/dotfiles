@@ -27,7 +27,6 @@ pkglist=(
     ms-vscode-remote.vscode-remote-extensionpack
     ms-vscode.cmake-tools
     ms-vscode.cpptools
-    octref.vetur
     redhat.vscode-yaml
     rust-lang.rust-analyzer
     s-nlf-fh.glassit
@@ -38,6 +37,7 @@ pkglist=(
     theqtcompany.qt
     tranhl.find-then-jump
     vadimcn.vscode-lldb
+    vue.volar
 )
 
 for i in ${pkglist[@]}; do
