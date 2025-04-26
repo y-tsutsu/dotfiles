@@ -2,6 +2,7 @@ call code --install-extension alefragnani.bookmarks
 call code --install-extension chaitanyashahare.lazygit
 call code --install-extension christian-kohler.path-intellisense
 call code --install-extension codezombiech.gitignore
+call code --install-extension cweijan.vscode-database-client2
 call code --install-extension eamodio.gitlens
 call code --install-extension editorconfig.editorconfig
 call code --install-extension formulahendry.code-runner

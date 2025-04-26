@@ -6,6 +6,7 @@ pkglist=(
     chaitanyashahare.lazygit
     christian-kohler.path-intellisense
     codezombiech.gitignore
+    cweijan.vscode-database-client2
     eamodio.gitlens
     editorconfig.editorconfig
     formulahendry.code-runner
