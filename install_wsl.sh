@@ -106,7 +106,8 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 source "$HOME/.cargo/env"
 
 # Qt
-sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtbase5-examples qtdeclarative5-dev qml-module-qtquick-controls qml-module-qtquick-controls2 qtwayland5 qtwayland5-dev-tools
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtbase5-examples qtdeclarative5-dev qml-module-qtquick-controls \
+    qml-module-qtquick-controls2 qtquickcontrols2-5-dev qtwayland5 qtwayland5-dev-tools
 
 # .NET
 cd /tmp/
