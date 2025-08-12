@@ -58,8 +58,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.13.1
-pyenv global 3.13.1
+pyenv install 3.13.5
+pyenv global 3.13.5
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -71,8 +71,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.23.4
-goenv global 1.23.4
+goenv install 1.24.6
+goenv global 1.24.6
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -104,16 +104,31 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 source "$HOME/.cargo/env"
 
 # Qt
-sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtbase5-examples qtdeclarative5-dev qml-module-qtquick-controls qml-module-qtquick-controls2 qtwayland5 qtwayland5-dev-tools
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtbase5-examples qtdeclarative5-dev qml-module-qtquick-controls \
+    qml-module-qtquick-controls2 qtquickcontrols2-5-dev qtwayland5 qtwayland5-dev-tools
 
 # .NET
 cd /tmp/
-wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
 sudo apt update
 sudo apt install -y dotnet-sdk-8.0
+
+# Docker
+cd /tmp/
+sudo apt remove docker docker-engine docker.io containerd runc
+sudo apt update
+sudo apt install -y ca-certificates curl gnupg lsb-release
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo systemctl restart docker
 
 # Visual Studio Code
 cd /tmp/
@@ -128,26 +143,10 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_7.0.3495.29-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_7.5.3735.58-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
-
-# Docker
-cd /tmp/
-for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt remove $pkg; done
-sudo apt update
-sudo apt install -y ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
-    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt update
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-sudo groupadd docker
-sudo gpasswd -a $USER docker
-sudo systemctl restart docker
 
 # lazygit
 cd /tmp/
