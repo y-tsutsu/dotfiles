@@ -60,8 +60,8 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-pyenv install 3.13.5
-pyenv global 3.13.5
+pyenv install 3.13.7
+pyenv global 3.13.7
 python --version
 pip install --upgrade pip setuptools
 pip install pip-tools
@@ -73,8 +73,8 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
-goenv install 1.24.6
-goenv global 1.24.6
+goenv install 1.25.0
+goenv global 1.25.0
 goenv rehash
 mkdir $HOME/dev
 export PATH=$GOROOT/bin:$PATH
@@ -97,8 +97,6 @@ chmod 755 dep-linux-amd64
 mv dep-linux-amd64 $GOPATH/bin/dep
 
 # node(npm)
-curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt update
 sudo apt install -y nodejs
 
 # Rust
