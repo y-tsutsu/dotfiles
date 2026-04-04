@@ -75,10 +75,10 @@
             },
             {
                 "colorScheme": "Ayu Mirage",
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "guid": "{a9f5ead8-b98c-5268-8226-5729d0bccb14}",
                 "hidden": false,
                 "name": "Debian",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Microsoft.WSL"
             },
             {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
