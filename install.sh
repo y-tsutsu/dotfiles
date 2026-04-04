@@ -68,6 +68,7 @@ pip-sync $DOTFILES_DIR/requirements.txt
 
 # golang
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
+git clone https://github.com/jcmuller/goenv-update.git $HOME/.goenv/plugins/goenv-update
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
@@ -95,9 +96,7 @@ chmod 755 dep-linux-amd64
 mv dep-linux-amd64 $GOPATH/bin/dep
 
 # node(npm)
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt update
-sudo apt install -y nodejs
+sudo apt install -y nodejs npm
 
 # Rust
 curl https://sh.rustup.rs -sSf | sh -s -- -y
@@ -112,9 +111,7 @@ cd /tmp/
 wget https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
-sudo apt install -y apt-transport-https
-sudo apt update
-sudo apt install -y dotnet-sdk-8.0
+sudo apt install -y dotnet-sdk-10.0
 
 # Docker
 cd /tmp/
