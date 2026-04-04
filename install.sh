@@ -161,7 +161,7 @@ sudo mv target/release/yazi target/release/ya /usr/local/bin/.
 sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
 sudo apt install -y bat
 # move to setup.sh
-# ya pack -a dedukun/bookmarks
+# ya pkg add dedukun/bookmarks
 # git clone https://github.com/mgumz/yazi-plugin-bat.git ~/.config/yazi/plugins/bat.yazi
 
 # HackGen
