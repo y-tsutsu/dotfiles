@@ -7,9 +7,9 @@ command -v pyenv >/dev/null || export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
 # pipenv
-autoload -Uz compinit
+autoload -U compinit
 compinit
-eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
+eval "$(register-python-argcomplete pipenv)"
 
 # goenv
 export GOENV_ROOT=$HOME/.goenv
