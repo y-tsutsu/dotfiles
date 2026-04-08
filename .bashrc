@@ -120,7 +120,7 @@ alias gitlog='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)
 alias rtags="rc -J ."
 alias clip="xclip -selection c"
 alias rmtmp="rm -rf /tmp/*"
-alias blink="echo -e '\e[1 q' && clear"
+alias blink="echo -e '\e[1 q'"
 alias bat="batcat"
 alias pbat="bat --pager=never --plain"
 
@@ -180,10 +180,10 @@ function y() {
     rm -f -- "$tmp"
 }
 
-# Cursor blinking block
-echo -e "\e[1 q" && clear
-
 # WSLg
 if [ ! -S "$XDG_RUNTIME_DIR/wayland-0" ]; then
     ln -s /mnt/wslg/runtime-dir/wayland-0* "$XDG_RUNTIME_DIR"
 fi
+
+# Cursor blinking block
+echo -e "\e[1 q" && clear
