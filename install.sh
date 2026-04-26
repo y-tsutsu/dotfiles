@@ -137,6 +137,13 @@ sudo systemctl restart docker
 
 # Visual Studio Code
 cd /tmp/
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt update
+sudo apt install -y code
+
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -148,7 +155,7 @@ $DOTFILES_DIR/vscode/install_vscode_extensions.sh
 
 # Vivaldi
 cd /tmp/
-VIVALDI_DEB=vivaldi-stable_7.5.3735.58-1_amd64.deb
+VIVALDI_DEB=vivaldi-stable_7.9.3970.59-1_amd64.deb
 wget -q https://downloads.vivaldi.com/stable/$VIVALDI_DEB
 sudo dpkg -i $VIVALDI_DEB
 sudo apt install -y -f
@@ -183,7 +190,7 @@ sudo fc-cache -fv
 
 # UDEV Gothic
 cd /tmp/
-UDEVG_VERSION=v2.1.0
+UDEVG_VERSION=v2.2.0
 wget https://github.com/yuru7/udev-gothic/releases/download/${UDEVG_VERSION}/UDEVGothic_${UDEVG_VERSION}.zip
 unzip UDEVGothic_${UDEVG_VERSION}.zip
 mkdir -p /home/tsutsu/.local/share/fonts/UDEVGothic
