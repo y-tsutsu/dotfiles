@@ -7,6 +7,7 @@
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.parameterHints.enabled": false,
+    "editor.pasteAs.enabled": false,
     "editor.renderWhitespace": "boundary",
     "editor.stickyScroll.enabled": false,
     "remote.restoreForwardedPorts": false,
