@@ -1,4 +1,5 @@
 {
+    "chat.disableAIFeatures": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": false,
     "editor.bracketPairColorization.enabled": false,
