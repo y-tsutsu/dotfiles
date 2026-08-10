@@ -29,3 +29,6 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # Google Test color
 export GTEST_COLOR=1
+
+# Flutter
+export PATH=$HOME/sdk/flutter/bin:$PATH

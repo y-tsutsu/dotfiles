@@ -7,6 +7,7 @@ pkglist=(
     christian-kohler.path-intellisense
     codezombiech.gitignore
     cweijan.vscode-database-client2
+    dart-code.flutter
     eamodio.gitlens
     editorconfig.editorconfig
     formulahendry.code-runner
